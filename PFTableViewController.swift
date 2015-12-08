@@ -24,7 +24,6 @@ class PFTableViewController: PFQueryTableViewController {
         return query
     }
     
-    
     // Initialise the PFQueryTable tableview
     override init(style: UITableViewStyle, className: String!) {
         super.init(style: style, className: className)
