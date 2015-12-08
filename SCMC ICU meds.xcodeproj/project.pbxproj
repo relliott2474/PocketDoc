@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012E723E1A7C68AE007E1A0B /* TableArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 012E723D1A7C68AE007E1A0B /* TableArray.plist */; };
+		01320C381AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 01320C371AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf */; };
+		01320C3A1AE575DD001F25A1 /* Stroke Core Measures.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 01320C391AE575DD001F25A1 /* Stroke Core Measures.pdf */; };
+		01320C3C1AE694B3001F25A1 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01320C3B1AE694B3001F25A1 /* EmailViewController.swift */; };
+		0143E9521AD7348D002B286E /* NeuroCC BP Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9511AD7348D002B286E /* NeuroCC BP Guidelines.pdf */; };
+		0143E9541AD734DA002B286E /* MG vs Eaton-Lambert.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9531AD734DA002B286E /* MG vs Eaton-Lambert.pdf */; };
+		0143E9561AD7353D002B286E /* Bronchiolitis Obliterans.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9551AD7353D002B286E /* Bronchiolitis Obliterans.pdf */; };
+		0143E9581AD73567002B286E /* OHSU Coag Reversal.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9571AD73567002B286E /* OHSU Coag Reversal.pdf */; };
+		0143E95A1AD735B6002B286E /* Bleeding Dyscrasias.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9591AD735B6002B286E /* Bleeding Dyscrasias.pdf */; };
+		0143E95C1AD735DC002B286E /* Hemolytic Reactions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95B1AD735DC002B286E /* Hemolytic Reactions.pdf */; };
+		0143E95E1AD73618002B286E /* Sepsis Definitions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */; };
+		0143E9601AD7364C002B286E /* Toxicololgy in ICU 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */; };
+		0143E9621AD73667002B286E /* Toxicology in ICU 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */; };
+		014BEC7E1B45D6D6003918BF /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC7D1B45D6D6003918BF /* libstdc++.6.dylib */; };
+		014BEC801B45D6E0003918BF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC7F1B45D6E0003918BF /* libsqlite3.dylib */; };
+		014BEC821B45D6EE003918BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC811B45D6EE003918BF /* libz.dylib */; };
+		014BEC8E1B45D765003918BF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC881B45D764003918BF /* Bolts.framework */; };
+		014BEC8F1B45D765003918BF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC891B45D765003918BF /* Parse.framework */; };
+		014BEC901B45D765003918BF /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC8A1B45D765003918BF /* ParseCrashReporting.framework */; };
+		014BEC911B45D765003918BF /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC8B1B45D765003918BF /* ParseFacebookUtils.framework */; };
+		014BEC921B45D765003918BF /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC8C1B45D765003918BF /* ParseFacebookUtilsV4.framework */; };
+		014BEC931B45D765003918BF /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC8D1B45D765003918BF /* ParseUI.framework */; };
+		014BEC941B45D793003918BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC851B45D70C003918BF /* AudioToolbox.framework */; };
+		014BEC951B45D7A8003918BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC831B45D705003918BF /* SystemConfiguration.framework */; };
+		015318A91B698FDE00EE8D73 /* 275locationsBend2.png in Resources */ = {isa = PBXBuildFile; fileRef = 015318A81B698FDE00EE8D73 /* 275locationsBend2.png */; };
+		016741B11A9D586B00407948 /* logoschs.png in Resources */ = {isa = PBXBuildFile; fileRef = 016741B01A9D586B00407948 /* logoschs.png */; };
+		016741B31A9D5BC300407948 /* logoschs80.png in Resources */ = {isa = PBXBuildFile; fileRef = 016741B21A9D5BC300407948 /* logoschs80.png */; };
+		018A76DD1A79A588007E624B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A76DC1A79A588007E624B /* AppDelegate.swift */; };
+		018A76E21A79A588007E624B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018A76E01A79A588007E624B /* Main.storyboard */; };
+		018A76E41A79A588007E624B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018A76E31A79A588007E624B /* Images.xcassets */; };
+		018A76E71A79A588007E624B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018A76E51A79A588007E624B /* LaunchScreen.xib */; };
+		018A76F31A79A588007E624B /* SCMC_ICU_medsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A76F21A79A588007E624B /* SCMC_ICU_medsTests.swift */; };
+		01B326191A841A2800FE6D1C /* thickLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B326181A841A2800FE6D1C /* thickLine@2x.png */; };
+		01B3261C1A84208300FE6D1C /* Capsule_Red 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B3261A1A84208300FE6D1C /* Capsule_Red 120.png */; };
+		01B3261D1A84208300FE6D1C /* Capsule_Red 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */; };
+		01C82E091A8582940018434E /* Caduceus 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C82E071A8582940018434E /* Caduceus 120.png */; };
+		01C82E0A1A8582940018434E /* Caduceus 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C82E081A8582940018434E /* Caduceus 180.png */; };
+		BD5F654D1B5AE93900CF0FAA /* PFMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */; };
+		BD5F654F1B5AE96100CF0FAA /* PFMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */; };
+		BD9DE2F11B4A3C570013BA9A /* PFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */; };
+		BD9DE2F21B4A3C570013BA9A /* PFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */; };
+		BDA924001AD6675100917AA2 /* pdf List.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA923FF1AD6675100917AA2 /* pdf List.plist */; };
+		BDA9240A1AD66A1E00917AA2 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA924091AD66A1E00917AA2 /* ButtonViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		018A76ED1A79A588007E624B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 018A76CF1A79A588007E624B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 018A76D61A79A588007E624B;
+			remoteInfo = "SCMC ICU meds";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012E723D1A7C68AE007E1A0B /* TableArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TableArray.plist; sourceTree = "<group>"; };
+		01320C371AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2015 Clinical Guidelines Core Measures.pdf"; sourceTree = "<group>"; };
+		01320C391AE575DD001F25A1 /* Stroke Core Measures.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Stroke Core Measures.pdf"; sourceTree = "<group>"; };
+		01320C3B1AE694B3001F25A1 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		0143E9511AD7348D002B286E /* NeuroCC BP Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NeuroCC BP Guidelines.pdf"; sourceTree = "<group>"; };
+		0143E9531AD734DA002B286E /* MG vs Eaton-Lambert.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "MG vs Eaton-Lambert.pdf"; sourceTree = "<group>"; };
+		0143E9551AD7353D002B286E /* Bronchiolitis Obliterans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bronchiolitis Obliterans.pdf"; sourceTree = "<group>"; };
+		0143E9571AD73567002B286E /* OHSU Coag Reversal.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OHSU Coag Reversal.pdf"; sourceTree = "<group>"; };
+		0143E9591AD735B6002B286E /* Bleeding Dyscrasias.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bleeding Dyscrasias.pdf"; sourceTree = "<group>"; };
+		0143E95B1AD735DC002B286E /* Hemolytic Reactions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hemolytic Reactions.pdf"; sourceTree = "<group>"; };
+		0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Sepsis Definitions.pdf"; sourceTree = "<group>"; };
+		0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Toxicololgy in ICU 3.pdf"; sourceTree = "<group>"; };
+		0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Toxicology in ICU 2.pdf"; sourceTree = "<group>"; };
+		014BEC7D1B45D6D6003918BF /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		014BEC7F1B45D6E0003918BF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		014BEC811B45D6EE003918BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		014BEC831B45D705003918BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		014BEC851B45D70C003918BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		014BEC881B45D764003918BF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		014BEC891B45D765003918BF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		014BEC8A1B45D765003918BF /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		014BEC8B1B45D765003918BF /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		014BEC8C1B45D765003918BF /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		014BEC8D1B45D765003918BF /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		014BEC971B45D85B003918BF /* SCMC-ICU-meds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCMC-ICU-meds-Bridging-Header.h"; sourceTree = "<group>"; };
+		015318A81B698FDE00EE8D73 /* 275locationsBend2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 275locationsBend2.png; sourceTree = "<group>"; };
+		016741B01A9D586B00407948 /* logoschs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoschs.png; sourceTree = "<group>"; };
+		016741B21A9D5BC300407948 /* logoschs80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoschs80.png; sourceTree = "<group>"; };
+		018A76D71A79A588007E624B /* SCMC ICU meds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCMC ICU meds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		018A76DB1A79A588007E624B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018A76DC1A79A588007E624B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		018A76E11A79A588007E624B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		018A76E31A79A588007E624B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		018A76E61A79A588007E624B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		018A76EC1A79A588007E624B /* SCMC ICU medsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SCMC ICU medsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		018A76F11A79A588007E624B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018A76F21A79A588007E624B /* SCMC_ICU_medsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMC_ICU_medsTests.swift; sourceTree = "<group>"; };
+		01B326181A841A2800FE6D1C /* thickLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thickLine@2x.png"; sourceTree = "<group>"; };
+		01B3261A1A84208300FE6D1C /* Capsule_Red 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capsule_Red 120.png"; sourceTree = "<group>"; };
+		01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capsule_Red 180.png"; sourceTree = "<group>"; };
+		01C82E071A8582940018434E /* Caduceus 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus 120.png"; sourceTree = "<group>"; };
+		01C82E081A8582940018434E /* Caduceus 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus 180.png"; sourceTree = "<group>"; };
+		BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFMedicineTableViewController.swift; sourceTree = "<group>"; };
+		BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFMedicineViewController.swift; sourceTree = "<group>"; };
+		BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFTableViewController.swift; path = ../PFTableViewController.swift; sourceTree = "<group>"; };
+		BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFViewController.swift; path = ../PFViewController.swift; sourceTree = "<group>"; };
+		BDA923FF1AD6675100917AA2 /* pdf List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pdf List.plist"; sourceTree = "<group>"; };
+		BDA924091AD66A1E00917AA2 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		018A76D41A79A588007E624B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014BEC7E1B45D6D6003918BF /* libstdc++.6.dylib in Frameworks */,
+				014BEC801B45D6E0003918BF /* libsqlite3.dylib in Frameworks */,
+				014BEC821B45D6EE003918BF /* libz.dylib in Frameworks */,
+				014BEC951B45D7A8003918BF /* SystemConfiguration.framework in Frameworks */,
+				014BEC941B45D793003918BF /* AudioToolbox.framework in Frameworks */,
+				014BEC931B45D765003918BF /* ParseUI.framework in Frameworks */,
+				014BEC911B45D765003918BF /* ParseFacebookUtils.framework in Frameworks */,
+				014BEC921B45D765003918BF /* ParseFacebookUtilsV4.framework in Frameworks */,
+				014BEC8F1B45D765003918BF /* Parse.framework in Frameworks */,
+				014BEC8E1B45D765003918BF /* Bolts.framework in Frameworks */,
+				014BEC901B45D765003918BF /* ParseCrashReporting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018A76E91A79A588007E624B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0143E9631AD738CA002B286E /* Reference Medications */ = {
+			isa = PBXGroup;
+			children = (
+				01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */,
+				01C82E071A8582940018434E /* Caduceus 120.png */,
+				01C82E081A8582940018434E /* Caduceus 180.png */,
+				01B326181A841A2800FE6D1C /* thickLine@2x.png */,
+				012E723D1A7C68AE007E1A0B /* TableArray.plist */,
+				016741B01A9D586B00407948 /* logoschs.png */,
+				016741B21A9D5BC300407948 /* logoschs80.png */,
+				01B3261A1A84208300FE6D1C /* Capsule_Red 120.png */,
+			);
+			name = "Reference Medications";
+			sourceTree = "<group>";
+		};
+		014BEC871B45D74D003918BF /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				014BEC881B45D764003918BF /* Bolts.framework */,
+				014BEC891B45D765003918BF /* Parse.framework */,
+				014BEC8A1B45D765003918BF /* ParseCrashReporting.framework */,
+				014BEC8B1B45D765003918BF /* ParseFacebookUtils.framework */,
+				014BEC8C1B45D765003918BF /* ParseFacebookUtilsV4.framework */,
+				014BEC8D1B45D765003918BF /* ParseUI.framework */,
+				014BEC851B45D70C003918BF /* AudioToolbox.framework */,
+				014BEC831B45D705003918BF /* SystemConfiguration.framework */,
+				014BEC811B45D6EE003918BF /* libz.dylib */,
+				014BEC7F1B45D6E0003918BF /* libsqlite3.dylib */,
+				014BEC7D1B45D6D6003918BF /* libstdc++.6.dylib */,
+			);
+			name = frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		018A76CE1A79A588007E624B = {
+			isa = PBXGroup;
+			children = (
+				018A76D91A79A588007E624B /* SCMC ICU meds */,
+				018A76EF1A79A588007E624B /* SCMC ICU medsTests */,
+				018A76D81A79A588007E624B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		018A76D81A79A588007E624B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				018A76D71A79A588007E624B /* SCMC ICU meds.app */,
+				018A76EC1A79A588007E624B /* SCMC ICU medsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		018A76D91A79A588007E624B /* SCMC ICU meds */ = {
+			isa = PBXGroup;
+			children = (
+				018A76E01A79A588007E624B /* Main.storyboard */,
+				BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */,
+				BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */,
+				BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */,
+				BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */,
+				018A76DC1A79A588007E624B /* AppDelegate.swift */,
+				01320C3B1AE694B3001F25A1 /* EmailViewController.swift */,
+				BDA924091AD66A1E00917AA2 /* ButtonViewController.swift */,
+				014BEC971B45D85B003918BF /* SCMC-ICU-meds-Bridging-Header.h */,
+				018A76E31A79A588007E624B /* Images.xcassets */,
+				018A76E51A79A588007E624B /* LaunchScreen.xib */,
+				018A76DA1A79A588007E624B /* Supporting Files */,
+			);
+			path = "SCMC ICU meds";
+			sourceTree = "<group>";
+		};
+		018A76DA1A79A588007E624B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				015318A81B698FDE00EE8D73 /* 275locationsBend2.png */,
+				014BEC871B45D74D003918BF /* frameworks */,
+				018A76DB1A79A588007E624B /* Info.plist */,
+				BDA923FC1AD6667400917AA2 /* Reference Articles */,
+				0143E9631AD738CA002B286E /* Reference Medications */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		018A76EF1A79A588007E624B /* SCMC ICU medsTests */ = {
+			isa = PBXGroup;
+			children = (
+				018A76F21A79A588007E624B /* SCMC_ICU_medsTests.swift */,
+				018A76F01A79A588007E624B /* Supporting Files */,
+			);
+			path = "SCMC ICU medsTests";
+			sourceTree = "<group>";
+		};
+		018A76F01A79A588007E624B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				018A76F11A79A588007E624B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDA923FC1AD6667400917AA2 /* Reference Articles */ = {
+			isa = PBXGroup;
+			children = (
+				01320C371AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf */,
+				01320C391AE575DD001F25A1 /* Stroke Core Measures.pdf */,
+				0143E9511AD7348D002B286E /* NeuroCC BP Guidelines.pdf */,
+				0143E9571AD73567002B286E /* OHSU Coag Reversal.pdf */,
+				0143E9531AD734DA002B286E /* MG vs Eaton-Lambert.pdf */,
+				BDA923FF1AD6675100917AA2 /* pdf List.plist */,
+				0143E9551AD7353D002B286E /* Bronchiolitis Obliterans.pdf */,
+				0143E95B1AD735DC002B286E /* Hemolytic Reactions.pdf */,
+				0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */,
+				0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */,
+				0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */,
+				0143E9591AD735B6002B286E /* Bleeding Dyscrasias.pdf */,
+			);
+			name = "Reference Articles";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		018A76D61A79A588007E624B /* SCMC ICU meds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018A76F61A79A588007E624B /* Build configuration list for PBXNativeTarget "SCMC ICU meds" */;
+			buildPhases = (
+				018A76D31A79A588007E624B /* Sources */,
+				018A76D41A79A588007E624B /* Frameworks */,
+				018A76D51A79A588007E624B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SCMC ICU meds";
+			productName = "SCMC ICU meds";
+			productReference = 018A76D71A79A588007E624B /* SCMC ICU meds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		018A76EB1A79A588007E624B /* SCMC ICU medsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018A76F91A79A588007E624B /* Build configuration list for PBXNativeTarget "SCMC ICU medsTests" */;
+			buildPhases = (
+				018A76E81A79A588007E624B /* Sources */,
+				018A76E91A79A588007E624B /* Frameworks */,
+				018A76EA1A79A588007E624B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				018A76EE1A79A588007E624B /* PBXTargetDependency */,
+			);
+			name = "SCMC ICU medsTests";
+			productName = "SCMC ICU medsTests";
+			productReference = 018A76EC1A79A588007E624B /* SCMC ICU medsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		018A76CF1A79A588007E624B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rod Elliott-Mullens";
+				TargetAttributes = {
+					018A76D61A79A588007E624B = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 57XC6Y3386;
+					};
+					018A76EB1A79A588007E624B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 018A76D61A79A588007E624B;
+					};
+				};
+			};
+			buildConfigurationList = 018A76D21A79A588007E624B /* Build configuration list for PBXProject "SCMC ICU meds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 018A76CE1A79A588007E624B;
+			productRefGroup = 018A76D81A79A588007E624B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				018A76D61A79A588007E624B /* SCMC ICU meds */,
+				018A76EB1A79A588007E624B /* SCMC ICU medsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		018A76D51A79A588007E624B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01320C381AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf in Resources */,
+				01B326191A841A2800FE6D1C /* thickLine@2x.png in Resources */,
+				0143E95E1AD73618002B286E /* Sepsis Definitions.pdf in Resources */,
+				0143E9561AD7353D002B286E /* Bronchiolitis Obliterans.pdf in Resources */,
+				0143E9601AD7364C002B286E /* Toxicololgy in ICU 3.pdf in Resources */,
+				0143E9621AD73667002B286E /* Toxicology in ICU 2.pdf in Resources */,
+				018A76E21A79A588007E624B /* Main.storyboard in Resources */,
+				0143E95A1AD735B6002B286E /* Bleeding Dyscrasias.pdf in Resources */,
+				01C82E0A1A8582940018434E /* Caduceus 180.png in Resources */,
+				016741B11A9D586B00407948 /* logoschs.png in Resources */,
+				01B3261C1A84208300FE6D1C /* Capsule_Red 120.png in Resources */,
+				0143E9541AD734DA002B286E /* MG vs Eaton-Lambert.pdf in Resources */,
+				01C82E091A8582940018434E /* Caduceus 120.png in Resources */,
+				016741B31A9D5BC300407948 /* logoschs80.png in Resources */,
+				BDA924001AD6675100917AA2 /* pdf List.plist in Resources */,
+				018A76E71A79A588007E624B /* LaunchScreen.xib in Resources */,
+				0143E95C1AD735DC002B286E /* Hemolytic Reactions.pdf in Resources */,
+				0143E9521AD7348D002B286E /* NeuroCC BP Guidelines.pdf in Resources */,
+				018A76E41A79A588007E624B /* Images.xcassets in Resources */,
+				01B3261D1A84208300FE6D1C /* Capsule_Red 180.png in Resources */,
+				0143E9581AD73567002B286E /* OHSU Coag Reversal.pdf in Resources */,
+				015318A91B698FDE00EE8D73 /* 275locationsBend2.png in Resources */,
+				012E723E1A7C68AE007E1A0B /* TableArray.plist in Resources */,
+				01320C3A1AE575DD001F25A1 /* Stroke Core Measures.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018A76EA1A79A588007E624B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		018A76D31A79A588007E624B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5F654F1B5AE96100CF0FAA /* PFMedicineViewController.swift in Sources */,
+				BD5F654D1B5AE93900CF0FAA /* PFMedicineTableViewController.swift in Sources */,
+				BDA9240A1AD66A1E00917AA2 /* ButtonViewController.swift in Sources */,
+				01320C3C1AE694B3001F25A1 /* EmailViewController.swift in Sources */,
+				BD9DE2F21B4A3C570013BA9A /* PFViewController.swift in Sources */,
+				BD9DE2F11B4A3C570013BA9A /* PFTableViewController.swift in Sources */,
+				018A76DD1A79A588007E624B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018A76E81A79A588007E624B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018A76F31A79A588007E624B /* SCMC_ICU_medsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		018A76EE1A79A588007E624B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 018A76D61A79A588007E624B /* SCMC ICU meds */;
+			targetProxy = 018A76ED1A79A588007E624B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		018A76E01A79A588007E624B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018A76E11A79A588007E624B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		018A76E51A79A588007E624B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018A76E61A79A588007E624B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		018A76F41A79A588007E624B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		018A76F51A79A588007E624B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		018A76F71A79A588007E624B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "SCMC ICU meds/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DNR.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		018A76F81A79A588007E624B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "SCMC ICU meds/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DNR.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		018A76FA1A79A588007E624B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SCMC ICU medsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DNR.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCMC ICU meds.app/SCMC ICU meds";
+			};
+			name = Debug;
+		};
+		018A76FB1A79A588007E624B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SCMC ICU medsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DNR.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCMC ICU meds.app/SCMC ICU meds";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		018A76D21A79A588007E624B /* Build configuration list for PBXProject "SCMC ICU meds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018A76F41A79A588007E624B /* Debug */,
+				018A76F51A79A588007E624B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018A76F61A79A588007E624B /* Build configuration list for PBXNativeTarget "SCMC ICU meds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018A76F71A79A588007E624B /* Debug */,
+				018A76F81A79A588007E624B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018A76F91A79A588007E624B /* Build configuration list for PBXNativeTarget "SCMC ICU medsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018A76FA1A79A588007E624B /* Debug */,
+				018A76FB1A79A588007E624B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 018A76CF1A79A588007E624B /* Project object */;
+}

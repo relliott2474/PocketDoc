@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>picImage</key>
+		<string>Syringe-Full-120</string>
+		<key>name</key>
+		<string>Nipride gtt</string>
+		<key>dose range</key>
+		<string>Dose: 0.3- 10 mcg/kg/min infusion</string>
+		<key>textinfo</key>
+		<string>Also known as Nitroprusside, used to reduce pressure, aortic dissection etc. 
+ dose &gt; 4mcg/kg/min can cause cyanide toxicity within 3hrs
+-          if a dose of 10mcg/kg/min is required for &gt; 10min, STOP and switch to alternate agent</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>IV-Bag-120</string>
+		<key>name</key>
+		<string>Epinephrine gtt</string>
+		<key>dose range</key>
+		<string> Dose: 0.1 - 0.5 mcg/kg/min </string>
+		<key>textinfo</key>
+		<string>Titrated to effect,Multiple uses include treatment for bradycardia, anaphylaxis, hypotension, ACLS</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>IV-Bag-120</string>
+		<key>name</key>
+		<string>Diltiazem gtt</string>
+		<key>dose range</key>
+		<string>Dose: bolus 10-20 mg then 5-15 mg/hr gtt</string>
+		<key>textinfo</key>
+		<string>Better as a rate control drug but may be used for hypertension</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Cardiac-Monitor-120</string>
+		<key>name</key>
+		<string>Dobutamine</string>
+		<key>dose range</key>
+		<string>Dose: start 1-20 mcg/kg/min</string>
+		<key>textinfo</key>
+		<string>Max is estimated at 20mcg/kg/min, but may cause hypotension. Used to improve cardiac contractility</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>IV-Bag-120</string>
+		<key>name</key>
+		<string>Nitroglycerin gtt</string>
+		<key>dose range</key>
+		<string>Dose: start 10mcg/min. Up to 200 mcg/min max  </string>
+		<key>textinfo</key>
+		<string>titrate to effect, hold for hypotension, has rarely been associated with methemoglobinemia</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Cardiac-Monitor-120</string>
+		<key>name</key>
+		<string>Lidocaine</string>
+		<key>dose range</key>
+		<string> Dose: Load: 0.7-1.4mg/kg then dose 1-4 mg/min infusion</string>
+		<key>textinfo</key>
+		<string>max over 24 hours 30-50 mcg/kg/min </string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Cardiac-Monitor-120</string>
+		<key>name</key>
+		<string>Esmolol gtt</string>
+		<key>dose range</key>
+		<string>Dose: 50-300 mcg/kg/min</string>
+		<key>textinfo</key>
+		<string>Primarily cardiac rate control but with some antihypertensive effects. </string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>IV-Bag-120</string>
+		<key>name</key>
+		<string>Levophed</string>
+		<key>dose range</key>
+		<string>Dose: 0.1 to 3mcg/kg/min (1-20 mcg/min)</string>
+		<key>textinfo</key>
+		<string>pressor, peripheral vasoconstrictor</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Cardiac-Monitor-120</string>
+		<key>name</key>
+		<string>Cardene drip</string>
+		<key>dose range</key>
+		<string>Dose: 2.5- 20 mg/ min</string>
+		<key>textinfo</key>
+		<string>antihypertensive medication, great for neuro injury etc. </string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Syringe-Full-120</string>
+		<key>name</key>
+		<string>PCC</string>
+		<key>dose range</key>
+		<string>Only used for life threatening bleeds</string>
+		<key>textinfo</key>
+		<string>INR 2-4: 25IU/kg of factor IX to a max of 2500IU
+INR 4-6: 35IU/kg of factor IX to a max of 3500IU
+INR &gt; 6: 50IU/kg of factor IX to a max of 5000IU
+-          do not repeat dose
+-          round dose up to next 500IU</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Syringe-Full-120</string>
+		<key>name</key>
+		<string>Precedex</string>
+		<key>dose range</key>
+		<string>Dose: 0.4-1.4 mcg/kg/min</string>
+		<key>textinfo</key>
+		<string>central acting sleep inducer to Stage 1 sleep, no respiratory effects. 
+Load: 1mcg/kg over 10min (not needed when transitioning from another sedative)
+</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Syringe-Full-120</string>
+		<key>name</key>
+		<string>Tranexamic acid</string>
+		<key>dose range</key>
+		<string>Dose: 1 gram over 10 minutes </string>
+		<key>textinfo</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Caduceus 120</string>
+		<key>name</key>
+		<string>Psychiatry consults</string>
+		<key>dose range</key>
+		<string>Call 2715 after hours</string>
+		<key>textinfo</key>
+		<string>a.    All requests for Psychiatric assessments during the hours of 0700 to 1700 need to be called directly to the Psychiatrist assigned to consultations via communications.
+ 
+b.    All requests for Psychiatric evaluations requested between the hours of 1700 and 0700 are to be called to Intake and Referral at ext. 2715 option 1.  Please leave a message and they will be placed on the consult list.
+ 
+c.     Request for Psychiatrist assessments after 0900 will be performed the following business day.</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Syringe-Full-120</string>
+		<key>name</key>
+		<string>Phenylephrine drip</string>
+		<key>dose range</key>
+		<string>Dose: 0.5-6 mcg/kg/min</string>
+		<key>textinfo</key>
+		<string>used as a pressor agent</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Cardiac-Monitor-120</string>
+		<key>name</key>
+		<string>Dopamine drip</string>
+		<key>dose range</key>
+		<string>Dose: 2-50 mcg/kg/min</string>
+		<key>textinfo</key>
+		<string>historically common pressor agent, may ??? have some renal perfusion effects???? at low doses, expect some tachycardia with use</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Syringe-Full-120</string>
+		<key>name</key>
+		<string>Propofol</string>
+		<key>dose range</key>
+		<string>Dose: 5 - 80 mcg/kg/hr</string>
+		<key>textinfo</key>
+		<string>sedative with respiratory depressive effects, watch for hypertriglyceridemia after 3 days of use.</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Syringe-Full-120</string>
+		<key>name</key>
+		<string>Ativan drip</string>
+		<key>dose range</key>
+		<string>Dose: range of 1-8mg / hr</string>
+		<key>textinfo</key>
+		<string>MAX of 8mg/hr to prevent propylene glycol toxicity</string>
+	</dict>
+	<dict>
+		<key>picImage</key>
+		<string>Cardiac-Monitor-120</string>
+		<key>name</key>
+		<string>Common Phone #s</string>
+		<key>dose range</key>
+		<string></string>
+		<key>textinfo</key>
+		<string>Bend ICU #s
+ICU – 2000
+ICU Fax # - 541-706-6346
+ICU Charge - 4945
+Monica: 541-408-1614
+ICU Doc Phone- 7930/7931
+
+Pharmacy:
+Inpatient – 7475
+Outpatient 4631
+ ICU Pharmacist - 2025
+Lab – 7200
+Micro – 7221
+ 
+IT help desk – 6394
+Poison Control – 1-800-222-1222</string>
+	</dict>
+</array>
+</plist>

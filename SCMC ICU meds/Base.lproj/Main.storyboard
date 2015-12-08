@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YIM-ok-fcx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNextCondensed.ttc">
+            <string>AvenirNextCondensed-Regular</string>
+            <string>AvenirNextCondensed-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Button View Controller-->
+        <scene sceneID="SLT-7Z-3Jk">
+            <objects>
+                <viewController id="X6b-X9-P3O" customClass="ButtonViewController" customModule="SCMC_ICU_meds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BTB-BP-kKy"/>
+                        <viewControllerLayoutGuide type="bottom" id="2jP-wc-gEG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UGT-Gm-dxj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixb-V3-EGd">
+                                <rect key="frame" x="71" y="104" width="179" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                <state key="normal" title="Reference Articles">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cip-jM-3hd" kind="show" id="Cn0-J7-0t3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcI-xe-zi6">
+                                <rect key="frame" x="88" y="416" width="133" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Email Suggestions">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Kd-4W-I3q" kind="show" id="Trl-8j-NAv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-6f-8Eg">
+                                <rect key="frame" x="54" y="199" width="212" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                <state key="normal" title="Reference Medications">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nRV-dP-dWf" kind="show" id="S1h-gW-k2D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ixb-V3-EGd" firstAttribute="top" secondItem="BTB-BP-kKy" secondAttribute="bottom" constant="104" id="06t-fP-vxs"/>
+                            <constraint firstItem="HRV-6f-8Eg" firstAttribute="leading" secondItem="UGT-Gm-dxj" secondAttribute="leadingMargin" constant="38" id="6Cg-uC-QlB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NcI-xe-zi6" secondAttribute="trailing" constant="83" id="9UH-aU-UdJ"/>
+                            <constraint firstItem="ixb-V3-EGd" firstAttribute="leading" secondItem="UGT-Gm-dxj" secondAttribute="leadingMargin" constant="55" id="KzZ-L9-fjt"/>
+                            <constraint firstItem="2jP-wc-gEG" firstAttribute="top" secondItem="HRV-6f-8Eg" secondAttribute="bottom" constant="205" id="QHN-pH-zok"/>
+                            <constraint firstItem="NcI-xe-zi6" firstAttribute="leading" secondItem="UGT-Gm-dxj" secondAttribute="leadingMargin" constant="72" id="QTc-d9-4M6"/>
+                            <constraint firstItem="HRV-6f-8Eg" firstAttribute="top" secondItem="ixb-V3-EGd" secondAttribute="bottom" constant="55" id="Udp-OM-69p"/>
+                            <constraint firstItem="2jP-wc-gEG" firstAttribute="top" secondItem="NcI-xe-zi6" secondAttribute="bottom" constant="60" id="YN2-tu-Qmb"/>
+                            <constraint firstAttribute="centerX" secondItem="HRV-6f-8Eg" secondAttribute="centerX" id="Yck-0o-TQK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ixb-V3-EGd" secondAttribute="trailing" constant="54" id="pRU-yj-7kh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HRV-6f-8Eg" secondAttribute="trailing" constant="38" id="qNS-sA-gy7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QHN-pH-zok"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="B8K-AE-T9s"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="refArticles" destination="ixb-V3-EGd" id="vFn-jy-8rP"/>
+                        <outlet property="refMeds" destination="HRV-6f-8Eg" id="CPG-65-Hsy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVO-fY-fPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2278" y="86"/>
+        </scene>
+        <!--Email View Controller-->
+        <scene sceneID="9NG-Lw-zj0">
+            <objects>
+                <viewController id="0Kd-4W-I3q" customClass="EmailViewController" customModule="SCMC_ICU_meds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VsH-tZ-sko"/>
+                        <viewControllerLayoutGuide type="bottom" id="2AM-xm-S9f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rpN-ps-SNs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfn-rq-UId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390" y="955"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tKW-ai-apH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YIM-ok-fcx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1bV-OF-JM1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X6b-X9-P3O" kind="relationship" relationship="rootViewController" id="qvF-kg-TS9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNZ-dR-tVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="196"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="6qf-Md-Yeu">
+            <objects>
+                <tableViewController id="cip-jM-3hd" customClass="PFTableViewController" customModule="SCMC_ICU_meds" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="it0-N2-GRk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="61" id="qQo-Ua-LUB" customClass="PFTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQo-Ua-LUB" id="Rxr-EF-19O">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="tK4-zz-1y2" kind="show" identifier="pdfSegue" id="kRY-gA-xXI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cip-jM-3hd" id="GhM-4o-hSU"/>
+                            <outlet property="delegate" destination="cip-jM-3hd" id="g7o-LP-4ms"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="y1H-rl-EQl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juv-Ll-xXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2797" y="-440"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pf3-6k-cEO">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="tK4-zz-1y2" customClass="PFViewController" customModule="SCMC_ICU_meds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3TJ-m2-JJ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nxz-2D-Tx6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mgy-xO-JYf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9l-ga-5iC">
+                                <rect key="frame" x="0.0" y="64" width="320" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tK4-zz-1y2" id="0Rx-ym-1Xn"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3l2-H4-apC">
+                                <rect key="frame" x="150" y="322" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3l2-H4-apC" firstAttribute="leading" secondItem="mgy-xO-JYf" secondAttribute="leadingMargin" constant="134" id="0yC-BO-gqP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D9l-ga-5iC" secondAttribute="trailing" constant="-16" id="5k3-mk-1dg"/>
+                            <constraint firstItem="D9l-ga-5iC" firstAttribute="leading" secondItem="mgy-xO-JYf" secondAttribute="leadingMargin" constant="-16" id="PIq-D0-tHa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3l2-H4-apC" secondAttribute="trailing" constant="134" id="Roi-na-sDS"/>
+                            <constraint firstItem="Nxz-2D-Tx6" firstAttribute="top" secondItem="D9l-ga-5iC" secondAttribute="bottom" constant="-32" id="hwY-MZ-3As"/>
+                            <constraint firstItem="D9l-ga-5iC" firstAttribute="top" secondItem="3TJ-m2-JJ1" secondAttribute="bottom" id="t59-VF-s38"/>
+                            <constraint firstItem="Nxz-2D-Tx6" firstAttribute="top" secondItem="3l2-H4-apC" secondAttribute="bottom" constant="226" id="zht-wk-wgs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gbo-Pb-Qtt"/>
+                    <connections>
+                        <outlet property="loadIndicator" destination="3l2-H4-apC" id="XPG-aS-hVK"/>
+                        <outlet property="pdfWebView" destination="D9l-ga-5iC" id="d4z-TM-Ic5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9o-E0-4Lr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3225" y="-440"/>
+        </scene>
+        <!--Medicine Table View Controller-->
+        <scene sceneID="owt-A0-zS3">
+            <objects>
+                <tableViewController id="nRV-dP-dWf" customClass="PFMedicineTableViewController" customModule="SCMC_ICU_meds" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="H1S-mB-n54">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" text="" placeholder="Search by Name" showsCancelButton="YES" id="l8Y-my-a89">
+                            <rect key="frame" x="0.0" y="64" width="226" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="45" id="yLM-UH-bkc" customClass="PFTableViewCell">
+                                <rect key="frame" x="0.0" y="130" width="320" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yLM-UH-bkc" id="KCE-Tu-qfp">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="dgZ-Z4-oDa" kind="show" identifier="pdfSegue" id="kuP-np-9SR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nRV-dP-dWf" id="VqJ-sJ-UPJ"/>
+                            <outlet property="delegate" destination="nRV-dP-dWf" id="H9L-KN-zcu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MxB-UB-KeG"/>
+                    <connections>
+                        <outlet property="searchBar" destination="l8Y-my-a89" id="VYr-Ut-HQw"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFb-0w-h8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2797" y="316"/>
+        </scene>
+        <!--Medicine View Controller-->
+        <scene sceneID="3Br-V3-sqa">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="dgZ-Z4-oDa" customClass="PFMedicineViewController" customModule="SCMC_ICU_meds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3jA-GZ-3Rw"/>
+                        <viewControllerLayoutGuide type="bottom" id="sZz-Mv-LRl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Czg-Dj-wV2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3zg-Ia-JP4">
+                                <rect key="frame" x="150" y="322" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WED-lo-8f7">
+                                <rect key="frame" x="40" y="226" width="240" height="268"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxs-b1-pbA">
+                                <rect key="frame" x="16" y="149" width="288" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0XV-Gn-3PM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-Cu-uIE">
+                                <rect key="frame" x="32" y="97" width="257" height="28"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="A7Q-fO-vYt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thickLine" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-WS-tex">
+                                <rect key="frame" x="16" y="203" width="288" height="3"/>
+                                <animations/>
+                                <color key="tintColor" red="0.019607843140000001" green="0.43137254899999999" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Wxs-b1-pbA" firstAttribute="leading" secondItem="Czg-Dj-wV2" secondAttribute="leadingMargin" id="3x9-iR-INe"/>
+                            <constraint firstItem="WED-lo-8f7" firstAttribute="leading" secondItem="Czg-Dj-wV2" secondAttribute="leadingMargin" constant="24" id="Avl-Am-sJs"/>
+                            <constraint firstItem="Skn-Cu-uIE" firstAttribute="leading" secondItem="Czg-Dj-wV2" secondAttribute="leadingMargin" constant="16" id="C7h-3f-t0i"/>
+                            <constraint firstItem="hnk-WS-tex" firstAttribute="leading" secondItem="Czg-Dj-wV2" secondAttribute="leadingMargin" id="LCf-Pz-b7O"/>
+                            <constraint firstItem="3zg-Ia-JP4" firstAttribute="leading" secondItem="Czg-Dj-wV2" secondAttribute="leadingMargin" constant="134" id="Ntd-Hk-wXe"/>
+                            <constraint firstItem="hnk-WS-tex" firstAttribute="trailing" secondItem="Czg-Dj-wV2" secondAttribute="trailingMargin" id="ZKH-1w-XsY"/>
+                            <constraint firstItem="Skn-Cu-uIE" firstAttribute="centerX" secondItem="3zg-Ia-JP4" secondAttribute="centerX" id="b7M-9o-Db2"/>
+                            <constraint firstItem="Skn-Cu-uIE" firstAttribute="centerX" secondItem="Wxs-b1-pbA" secondAttribute="centerX" id="d3Y-2b-scG"/>
+                            <constraint firstItem="sZz-Mv-LRl" firstAttribute="top" secondItem="3zg-Ia-JP4" secondAttribute="bottom" constant="226" id="dFX-7x-aec"/>
+                            <constraint firstItem="hnk-WS-tex" firstAttribute="top" secondItem="Wxs-b1-pbA" secondAttribute="bottom" constant="19" id="dRU-rH-E9Y"/>
+                            <constraint firstItem="Wxs-b1-pbA" firstAttribute="centerX" secondItem="WED-lo-8f7" secondAttribute="centerX" id="eb9-8g-OYY"/>
+                            <constraint firstItem="sZz-Mv-LRl" firstAttribute="top" secondItem="WED-lo-8f7" secondAttribute="bottom" constant="74" id="gr3-Eu-g83"/>
+                            <constraint firstItem="WED-lo-8f7" firstAttribute="top" secondItem="Wxs-b1-pbA" secondAttribute="bottom" constant="42" id="hlf-fH-Qfb"/>
+                            <constraint firstItem="Wxs-b1-pbA" firstAttribute="top" secondItem="Skn-Cu-uIE" secondAttribute="bottom" constant="24" id="no4-qr-ahF"/>
+                            <constraint firstItem="Skn-Cu-uIE" firstAttribute="top" secondItem="3jA-GZ-3Rw" secondAttribute="bottom" constant="33" id="wia-qJ-Jy3"/>
+                            <constraint firstItem="WED-lo-8f7" firstAttribute="top" secondItem="hnk-WS-tex" secondAttribute="bottom" constant="20" id="xFG-gu-R98"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3zg-Ia-JP4" secondAttribute="trailing" constant="134" id="zf9-Ry-iK5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mqF-te-Sgb"/>
+                    <connections>
+                        <outlet property="doseLabel" destination="Wxs-b1-pbA" id="PTp-DU-G5T"/>
+                        <outlet property="nameLabel" destination="Skn-Cu-uIE" id="22a-aT-qJP"/>
+                        <outlet property="textInfo" destination="WED-lo-8f7" id="6dx-cd-OZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ZK-gD-eKP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3339" y="316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thickLine" width="212" height="3"/>
+    </resources>
+</document>

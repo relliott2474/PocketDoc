@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>pdf name</key>
+		<string>NeuroCC BP Guidelines</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>tPA for PE or not?</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>2015 Clinical Guidelines Core Measures</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>OHSU Coag Reversal</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>MG vs Eaton-Lambert</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>Bronchiolitis Obliterans</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>Hemolytic Reactions</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>Toxicology in ICU 2</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>Toxicology in ICU 3</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>Sepsis Definitions</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>Bleeding Dyscrasias</string>
+	</dict>
+	<dict>
+		<key>pdf name</key>
+		<string>Stroke Core Measures</string>
+	</dict>
+</array>
+</plist>
