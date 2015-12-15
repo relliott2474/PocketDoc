@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import Bolts
 import ParseUI
-
+import QuartzCore
 
 class PFTableViewController: PFQueryTableViewController {
 
@@ -54,6 +54,19 @@ class PFTableViewController: PFQueryTableViewController {
         if let articleName = object?["artNames"] as? String{
             cell?.textLabel?.text = articleName
         }
+        
+        let startColor:UIColor = UIColor.redColor()
+        
+        let endColor: UIColor = UIColor.purpleColor()
+        
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = cell!.contentView.bounds
+        gradient.startPoint = CGPointMake(0.0, 0.5)
+        gradient.endPoint = CGPointMake(1.0, 0.5)
+        gradient.colors = [startColor.CGColor, endColor.CGColor]
+        
+        cell!.contentView.layer.insertSublayer(gradient, atIndex: 0);
+
         return cell
     }
 
