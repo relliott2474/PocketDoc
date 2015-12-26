@@ -20,6 +20,9 @@
 		0143E95E1AD73618002B286E /* Sepsis Definitions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */; };
 		0143E9601AD7364C002B286E /* Toxicololgy in ICU 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */; };
 		0143E9621AD73667002B286E /* Toxicology in ICU 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */; };
+		014B09961C2F582F001FE552 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B09951C2F582F001FE552 /* Notes.swift */; };
+		014B09981C2F5837001FE552 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B09971C2F5837001FE552 /* NotesTableViewController.swift */; };
+		014B099A1C2F5847001FE552 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B09991C2F5847001FE552 /* NotesViewController.swift */; };
 		014BEC7E1B45D6D6003918BF /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC7D1B45D6D6003918BF /* libstdc++.6.dylib */; };
 		014BEC801B45D6E0003918BF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC7F1B45D6E0003918BF /* libsqlite3.dylib */; };
 		014BEC821B45D6EE003918BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC811B45D6EE003918BF /* libz.dylib */; };
@@ -76,6 +79,9 @@
 		0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Sepsis Definitions.pdf"; sourceTree = "<group>"; };
 		0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Toxicololgy in ICU 3.pdf"; sourceTree = "<group>"; };
 		0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Toxicology in ICU 2.pdf"; sourceTree = "<group>"; };
+		014B09951C2F582F001FE552 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		014B09971C2F5837001FE552 /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		014B09991C2F5847001FE552 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		014BEC7D1B45D6D6003918BF /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		014BEC7F1B45D6E0003918BF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		014BEC811B45D6EE003918BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -202,6 +208,9 @@
 				BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */,
 				BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */,
 				BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */,
+				014B09971C2F5837001FE552 /* NotesTableViewController.swift */,
+				014B09951C2F582F001FE552 /* Notes.swift */,
+				014B09991C2F5847001FE552 /* NotesViewController.swift */,
 				018A76DC1A79A588007E624B /* AppDelegate.swift */,
 				01320C3B1AE694B3001F25A1 /* EmailViewController.swift */,
 				BDA924091AD66A1E00917AA2 /* ButtonViewController.swift */,
@@ -387,11 +396,14 @@
 			files = (
 				BD5F654F1B5AE96100CF0FAA /* PFMedicineViewController.swift in Sources */,
 				BD5F654D1B5AE93900CF0FAA /* PFMedicineTableViewController.swift in Sources */,
+				014B09981C2F5837001FE552 /* NotesTableViewController.swift in Sources */,
 				BDA9240A1AD66A1E00917AA2 /* ButtonViewController.swift in Sources */,
 				01320C3C1AE694B3001F25A1 /* EmailViewController.swift in Sources */,
 				BD9DE2F21B4A3C570013BA9A /* PFViewController.swift in Sources */,
+				014B099A1C2F5847001FE552 /* NotesViewController.swift in Sources */,
 				BD9DE2F11B4A3C570013BA9A /* PFTableViewController.swift in Sources */,
 				018A76DD1A79A588007E624B /* AppDelegate.swift in Sources */,
+				014B09961C2F582F001FE552 /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
