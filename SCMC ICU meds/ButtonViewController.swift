@@ -34,6 +34,7 @@ class ButtonViewController: UIViewController {
         
         self.navigationController!.navigationBar.setBackgroundImage(image , forBarMetrics:.Default)
         self.navigationController!.navigationBar
+        //self.title = UIFont(name: "Avenir", size: 20)
         self.title = "St Charles Reference"
         
     }
