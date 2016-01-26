@@ -26,12 +26,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Phone SCMC 541-706-2000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HWq-qu-Sg0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HWq-qu-Sg0">
                                 <rect key="frame" x="62" y="127" width="486" height="390"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,7 +65,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cip-jM-3hd" kind="show" id="Cn0-J7-0t3"/>
+                                    <segue destination="cip-jM-3hd" kind="show" identifier="pdfSegue" id="Cn0-J7-0t3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lc-10-XfV">
@@ -128,7 +128,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HRV-6f-8Eg" firstAttribute="centerX" secondItem="ixb-V3-EGd" secondAttribute="centerX" id="0f9-eH-m55"/>
                             <constraint firstItem="2lc-10-XfV" firstAttribute="top" secondItem="ixb-V3-EGd" secondAttribute="bottom" constant="13" id="14i-Th-Ca2"/>
@@ -359,7 +359,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9l-ga-5iC">
-                                <rect key="frame" x="4" y="64" width="592" height="568"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="tK4-zz-1y2" id="0Rx-ym-1Xn"/>
@@ -372,10 +372,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3l2-H4-apC" firstAttribute="leading" secondItem="mgy-xO-JYf" secondAttribute="leadingMargin" constant="134" id="0yC-BO-gqP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="D9l-ga-5iC" secondAttribute="trailing" constant="-16" id="5k3-mk-1dg"/>
-                            <constraint firstItem="D9l-ga-5iC" firstAttribute="leading" secondItem="mgy-xO-JYf" secondAttribute="leadingMargin" constant="-16" id="PIq-D0-tHa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D9l-ga-5iC" secondAttribute="trailing" constant="-20" id="5k3-mk-1dg"/>
+                            <constraint firstItem="D9l-ga-5iC" firstAttribute="leading" secondItem="mgy-xO-JYf" secondAttribute="leadingMargin" constant="-20" id="PIq-D0-tHa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3l2-H4-apC" secondAttribute="trailing" constant="134" id="Roi-na-sDS"/>
-                            <constraint firstItem="Nxz-2D-Tx6" firstAttribute="top" secondItem="D9l-ga-5iC" secondAttribute="bottom" constant="-32" id="hwY-MZ-3As"/>
+                            <constraint firstItem="Nxz-2D-Tx6" firstAttribute="top" secondItem="D9l-ga-5iC" secondAttribute="bottom" id="hwY-MZ-3As"/>
                             <constraint firstItem="D9l-ga-5iC" firstAttribute="top" secondItem="3TJ-m2-JJ1" secondAttribute="bottom" id="t59-VF-s38"/>
                             <constraint firstItem="Nxz-2D-Tx6" firstAttribute="top" secondItem="3l2-H4-apC" secondAttribute="bottom" constant="226" id="zht-wk-wgs"/>
                         </constraints>
