@@ -12,11 +12,11 @@ import Bolts
 
 class PFMedicineViewController: UIViewController {
     var currentObject1 = PFObject?()
-    let groups = ["Cardiac", "Hemostasis", "Neuro", "Pressors", "Reversal Agents", "Sedatives"]
-    @IBOutlet weak var nameLabel: UILabel!
-
-    @IBOutlet weak var doseLabel: UILabel!
     
+    let groups = ["Cardiac", "Hemostasis", "Neuro", "Pressors", "Reversal Agents", "Sedatives"]
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var doseLabel: UILabel!
     @IBOutlet weak var textInfo: UITextView!
     
     override func viewDidLoad() {
@@ -33,10 +33,7 @@ class PFMedicineViewController: UIViewController {
             // textview
             let textObject:AnyObject? = object.objectForKey("textInfo")
             textInfo.text = textObject as? String
-            
-            
         }
-
         // Do any additional setup after loading the view.
     }
 
@@ -44,6 +41,4 @@ class PFMedicineViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }
