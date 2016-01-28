@@ -35,7 +35,6 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         query.cachePolicy = PFCachePolicy.CacheThenNetwork
         }
         
-        
         if searchBar.text != "" {
 
           _ =  query.whereKey("name", matchesRegex:searchBar.text!.capitalizedString, modifiers:"i")
@@ -58,8 +57,6 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         self.pullToRefreshEnabled = true
         self.paginationEnabled = false
     }
-    
-   
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         
