@@ -19,7 +19,7 @@ class NotesTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.reloadData()
         title = "Notes List"
-        self.tableView.rowHeight = 40.0
+        self.tableView.rowHeight = 45.0
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

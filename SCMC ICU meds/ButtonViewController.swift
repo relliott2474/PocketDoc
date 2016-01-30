@@ -11,7 +11,6 @@ import UIKit
 class ButtonViewController: UIViewController {
     
     @IBOutlet weak var refArticles: UIButton!
-    
     @IBOutlet weak var refMeds: UIButton!
    
     override func viewDidLoad() {
