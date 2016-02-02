@@ -19,7 +19,8 @@ class NotesTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.reloadData()
         title = "Notes List"
-        self.tableView.rowHeight = 45.0
+        self.tableView.rowHeight = rowHeight
+        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

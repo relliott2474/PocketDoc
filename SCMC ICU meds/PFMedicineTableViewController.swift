@@ -68,8 +68,10 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         
         if let articleName = object?["name"] as? String{
             cell?.textLabel?.text = articleName
-        
+            
         }
+        
+        
         return cell
 
     }
@@ -151,7 +153,8 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Medications"
-        
+        navigationController?.navigationBar.barTintColor = UIColor.redColor()
+        self.tableView.rowHeight = 50.0
    }
         // Do any additional setup after loading the view.
 

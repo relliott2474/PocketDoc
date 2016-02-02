@@ -19,6 +19,9 @@ class DataManager {
         
         let context: NSManagedObjectContext = appDel.managedObjectContext
         
+        
+        // add empty string check here
+        
         let newData = NSEntityDescription.insertNewObjectForEntityForName("NoteFile", inManagedObjectContext: context)
         if nameText != newData{
             newData.setValue(nameText, forKey: "noteTitle")

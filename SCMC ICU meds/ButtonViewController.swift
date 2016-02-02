@@ -18,7 +18,7 @@ class ButtonViewController: UIViewController {
         
         
         // this sets the navigation bar Color
-        //navigationController!.navigationBar.barTintColor = UIColor.redColor()
+        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         
         //this sets the navigation bar title text color
         navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -27,14 +27,14 @@ class ButtonViewController: UIViewController {
        navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         borders()
         
-        //set a pic to the background of the title bar.
+       /* //set a pic to the background of the title bar.
         navigationController!.navigationBar.barTintColor = UIColor.clearColor()
         let image:UIImage = UIImage(named: "275locationsBend2.png")!
         
         self.navigationController!.navigationBar.setBackgroundImage(image , forBarMetrics:.Default)
-        self.navigationController!.navigationBar
-        //self.title = UIFont(name: "Avenir", size: 20)
-        self.title = "St Charles Reference"
+        self.navigationController!.navigationBar*/
+        //self.title.font = UIFont(name: "Avenir", size: 20)
+        self.title = "SCHS Reference"
         
     }
     
@@ -53,7 +53,6 @@ class ButtonViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -63,5 +62,8 @@ class ButtonViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func viewWillAppear(animated: Bool) {
+        navigationController!.navigationBar.barTintColor = UIColor.redColor()
+        borders()
+    }
 }

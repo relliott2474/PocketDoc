@@ -13,6 +13,7 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = UIColor.yellowColor()
         if (MFMailComposeViewController.canSendMail()) {
             
             let emailTitle = "DNR Innovations Feedback"
