@@ -23,6 +23,7 @@ class NotesViewController: UIViewController {
     @IBAction func buttonAction(sender: AnyObject) {
         
         if buttonView == "Save" {
+            buttonOutlet.backgroundColor = UIColor.greenColor()
             var name = titleTextField.text
             name = name?.capitalizedString
             var text = notesField.text
@@ -44,6 +45,9 @@ class NotesViewController: UIViewController {
         titleTextField.text = noteTitle
         notesField.text = notesDescription
         buttonOutlet.setTitle(buttonView, forState: .Normal)
+        if buttonView == "Save" {
+            buttonOutlet.backgroundColor = UIColor.greenColor()
+            }
         // Do any additional setup after loading the view.
     }
 

@@ -48,6 +48,8 @@
 		01B3261D1A84208300FE6D1C /* Capsule_Red 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */; };
 		01C82E091A8582940018434E /* Caduceus 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C82E071A8582940018434E /* Caduceus 120.png */; };
 		01C82E0A1A8582940018434E /* Caduceus 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C82E081A8582940018434E /* Caduceus 180.png */; };
+		BD4517281C5EA50C00D83AB8 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4517271C5EA50C00D83AB8 /* PhoneNumberViewController.swift */; };
+		BD45172A1C5EA70D00D83AB8 /* MedicinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4517291C5EA70D00D83AB8 /* MedicinesTableViewCell.swift */; };
 		BD5F654D1B5AE93900CF0FAA /* PFMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */; };
 		BD5F654F1B5AE96100CF0FAA /* PFMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */; };
 		BD9DE2F11B4A3C570013BA9A /* PFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */; };
@@ -113,6 +115,8 @@
 		01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capsule_Red 180.png"; sourceTree = "<group>"; };
 		01C82E071A8582940018434E /* Caduceus 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus 120.png"; sourceTree = "<group>"; };
 		01C82E081A8582940018434E /* Caduceus 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus 180.png"; sourceTree = "<group>"; };
+		BD4517271C5EA50C00D83AB8 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		BD4517291C5EA70D00D83AB8 /* MedicinesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesTableViewCell.swift; sourceTree = "<group>"; };
 		BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFMedicineTableViewController.swift; sourceTree = "<group>"; };
 		BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFMedicineViewController.swift; sourceTree = "<group>"; };
 		BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFTableViewController.swift; path = ../PFTableViewController.swift; sourceTree = "<group>"; };
@@ -206,10 +210,12 @@
 			isa = PBXGroup;
 			children = (
 				018A76E01A79A588007E624B /* Main.storyboard */,
+				BD4517271C5EA50C00D83AB8 /* PhoneNumberViewController.swift */,
 				010F66431C569EE7006E82A4 /* DataManager.swift */,
 				BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */,
 				BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */,
 				BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */,
+				BD4517291C5EA70D00D83AB8 /* MedicinesTableViewCell.swift */,
 				BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */,
 				014B09971C2F5837001FE552 /* NotesTableViewController.swift */,
 				014B09991C2F5847001FE552 /* NotesViewController.swift */,
@@ -405,8 +411,10 @@
 				BDA9240A1AD66A1E00917AA2 /* ButtonViewController.swift in Sources */,
 				01320C3C1AE694B3001F25A1 /* EmailViewController.swift in Sources */,
 				BD9DE2F21B4A3C570013BA9A /* PFViewController.swift in Sources */,
+				BD4517281C5EA50C00D83AB8 /* PhoneNumberViewController.swift in Sources */,
 				014B099A1C2F5847001FE552 /* NotesViewController.swift in Sources */,
 				BD9DE2F11B4A3C570013BA9A /* PFTableViewController.swift in Sources */,
+				BD45172A1C5EA70D00D83AB8 /* MedicinesTableViewCell.swift in Sources */,
 				018A76DD1A79A588007E624B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

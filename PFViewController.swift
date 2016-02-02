@@ -13,7 +13,6 @@ import Bolts
 class PFViewController: UIViewController, UIWebViewDelegate {
     var currentObject = PFObject?()
     
-   
     @IBOutlet weak var loadIndicator: UIActivityIndicatorView!
     @IBOutlet weak var pdfWebView: UIWebView!
     

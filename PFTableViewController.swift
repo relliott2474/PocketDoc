@@ -44,19 +44,23 @@ class PFTableViewController: PFQueryTableViewController {
         self.title = "Reading List"
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         // Do any additional setup after loading the view.
-        self.tableView.rowHeight = 45.0
+        self.tableView.rowHeight = rowHeight
+        self.navigationController?.navigationBar.barTintColor = UIColor.blueColor()
     }
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+        //attempting to make a new label cell for view controller
         var cell:PFTableViewCell? = tableView.dequeueReusableCellWithIdentifier("cell") as? PFTableViewCell!
         
         if cell == nil{
             cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
         }
+            
         if let articleName = object?["artNames"] as? String{
             cell?.textLabel?.text = articleName
-        }
+            }
         
-        let startColor:UIColor = UIColor.redColor()
+        
+       /* let startColor:UIColor = UIColor.redColor()
         let endColor: UIColor = UIColor.purpleColor()
         //let startColor2:UIColor = UIColor(red: 0.5, green: 0.0, blue: 0.5, alpha: 0.1)
         //let endColor2:UIColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.1)
@@ -69,7 +73,7 @@ class PFTableViewController: PFQueryTableViewController {
         //gradient.colors = [startColor2.CGColor, endColor2.CGColor]
         
         cell!.contentView.layer.insertSublayer(gradient, atIndex: 0);
-
+    */
         return cell
     }
 
