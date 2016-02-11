@@ -68,13 +68,15 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         
         if let articleName = object?["name"] as? String{
             cell?.textLabel?.text = articleName
+            if let detailInfo = object?["doserange"] as? String{
+                cell?.detailTextLabel?.text = detailInfo
+            }
+
             
         }
-        
-        
         return cell
-
     }
+    
      /*  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     
         return indexOfClasses.count
@@ -154,7 +156,7 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         super.viewDidLoad()
         navigationItem.title = "Medications"
         navigationController?.navigationBar.barTintColor = UIColor.redColor()
-        self.tableView.rowHeight = 50.0
+        self.tableView.rowHeight = 40.0
    }
         // Do any additional setup after loading the view.
 

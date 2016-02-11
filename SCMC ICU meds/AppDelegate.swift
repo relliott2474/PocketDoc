@@ -13,7 +13,7 @@ import Bolts
 import Parse
 import CoreData
 
-let rowHeight = 40.0 as CGFloat
+let rowHeight = 80.0 as CGFloat
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
