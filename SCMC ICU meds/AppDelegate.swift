@@ -13,7 +13,7 @@ import Bolts
 import Parse
 import CoreData
 
-let rowHeight = 80.0 as CGFloat
+let rowHeight = 40.0 as CGFloat
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -102,7 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Core Data Saving support
     
-    func saveContext () {
+   /* func saveContext () {
         if managedObjectContext.hasChanges {
             do {
                 try managedObjectContext.save()
@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
-    }
+    }*/
 
 
 }

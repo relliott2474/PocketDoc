@@ -13,31 +13,34 @@ import CoreData
 class DataManager {
     
     let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
-    
+    //let presentViewController:UIViewController
     
     func saveNewDataToModel(nameText:String, dataText:String){
         
         let context: NSManagedObjectContext = appDel.managedObjectContext
-        
-        
-        // add empty string check here
-        
         let newData = NSEntityDescription.insertNewObjectForEntityForName("NoteFile", inManagedObjectContext: context)
+        // sets the new transferred data to be saved.
         if nameText != newData{
             newData.setValue(nameText, forKey: "noteTitle")
             newData.setValue(dataText, forKey: "noteText")
-        do{
+            
+            if let name = newData.valueForKey("noteTitle"){
+                if let text = newData.valueForKey("noteText"){
+                    print(name, text)
+                }
+            }
+
+        /*do{
             try context.save()
             if let name = newData.valueForKey("noteTitle"){
                 if let text = newData.valueForKey("noteText"){
                     print(name, text)
                 }
             }
-            
-        }catch{
-            print("failed to save data")
-        }
-        }//if statement
+            }catch{
+                print("failed to save data")
+            }*/
+         }//if statement
         }
     
     func removeData(nameText:String){
@@ -53,10 +56,11 @@ class DataManager {
                     context.deleteObject(result)
                     do{
                         try context.save()
+                        print("data removed")
+                        print(context)
                     }catch{
                         print("no data removed")
                     }
-                    
                 }
             }
         }catch{
@@ -64,11 +68,12 @@ class DataManager {
         }
         }
     
-    func updateData (nameText:String, textFieldText:String){
+    func updateData (title:String, nameText:String, dataText:String){
         
         let context:NSManagedObjectContext = appDel.managedObjectContext
         let request = NSFetchRequest(entityName: "NoteFile")
-        request.predicate = NSPredicate(format: "noteTitle = %@", nameText)
+        request.predicate = NSPredicate(format: "noteTitle = %@", title)
+        //request.predicate = NSPredicate(format: "noteTitle = %@", nameText)  // this will help to search.
         request.returnsObjectsAsFaults = false
         
         do{
@@ -76,8 +81,8 @@ class DataManager {
             if results.count > 0{
                 for result in results as! [NSManagedObject]{
                     result.setValue(nameText,forKey:"noteTitle")
-                    result.setValue(textFieldText, forKey:"noteText")
-                    do{
+                    result.setValue(dataText, forKey:"noteText")
+                    /*do{
                         try context.save()
                         print("saved updated data")
                         if let newtitle = result.valueForKey("noteTitle") as? String{
@@ -87,21 +92,14 @@ class DataManager {
                         }
                     }catch {
                         print("failed to save updata data")
-                    }
-                }//for loop
-            }//results.count
-            
+                    }*/
+                }
+            }
             
         }//do
         catch{
             print("failed to update the data")
         }
-        
-        
     }
-    
-    
-    
-    
     
 }

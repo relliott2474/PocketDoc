@@ -163,6 +163,8 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="B8K-AE-T9s"/>
                     <connections>
+                        <outlet property="PhoneNumBtn" destination="afb-8V-1Ha" id="6RM-pJ-cf4"/>
+                        <outlet property="notesButton" destination="2lc-10-XfV" id="poa-FG-NJK"/>
                         <outlet property="refArticles" destination="ixb-V3-EGd" id="vFn-jy-8rP"/>
                         <outlet property="refMeds" destination="HRV-6f-8Eg" id="CPG-65-Hsy"/>
                     </connections>
@@ -243,14 +245,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="h3i-6c-XI6">
-                                <rect key="frame" x="38" y="176" width="525" height="373"/>
-                                <color key="backgroundColor" red="1" green="0.87776443509973112" blue="0.82168074721179829" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfX-a0-ecq">
                                 <rect key="frame" x="486" y="105" width="72" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -268,28 +262,35 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Note Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BcY-Ad-B3u">
                                 <rect key="frame" x="38" y="105" width="414" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="4p5-Dv-8ud"/>
+                                    <constraint firstAttribute="width" constant="414" id="anM-W1-VGD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7oj-4R-tad">
+                                <rect key="frame" x="38" y="181" width="520" height="387"/>
+                                <color key="backgroundColor" red="0.953125" green="0.81522045779999996" blue="0.35829647780000001" alpha="0.37082932692307691" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BcY-Ad-B3u" firstAttribute="leading" secondItem="tjF-YL-0e5" secondAttribute="leadingMargin" constant="18" id="0su-jz-EcK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TfX-a0-ecq" secondAttribute="trailing" constant="22" id="2Z8-KJ-gbc"/>
-                            <constraint firstItem="TfX-a0-ecq" firstAttribute="leading" secondItem="BcY-Ad-B3u" secondAttribute="trailing" constant="34" id="CIR-1b-nuf"/>
+                            <constraint firstItem="BcY-Ad-B3u" firstAttribute="leading" secondItem="tjF-YL-0e5" secondAttribute="leadingMargin" constant="18" id="Bwc-lg-gt8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TfX-a0-ecq" secondAttribute="trailing" constant="22" id="Ggr-zL-FTj"/>
                             <constraint firstItem="TfX-a0-ecq" firstAttribute="top" secondItem="NXW-bx-hZM" secondAttribute="bottom" constant="41" id="NIZ-xc-frO"/>
-                            <constraint firstItem="h3i-6c-XI6" firstAttribute="centerX" secondItem="tjF-YL-0e5" secondAttribute="centerX" id="NLJ-UW-8oe"/>
-                            <constraint firstItem="h3i-6c-XI6" firstAttribute="top" secondItem="TfX-a0-ecq" secondAttribute="bottom" constant="41" id="QbR-Vg-IcO"/>
-                            <constraint firstItem="BcY-Ad-B3u" firstAttribute="leading" secondItem="h3i-6c-XI6" secondAttribute="leading" id="Y1U-zJ-8GO"/>
-                            <constraint firstItem="BcY-Ad-B3u" firstAttribute="top" secondItem="TfX-a0-ecq" secondAttribute="top" id="oUe-uA-4aW"/>
-                            <constraint firstItem="X3l-hM-yNw" firstAttribute="top" secondItem="h3i-6c-XI6" secondAttribute="bottom" constant="51" id="qsB-Yc-QTM"/>
+                            <constraint firstItem="X3l-hM-yNw" firstAttribute="top" secondItem="7oj-4R-tad" secondAttribute="bottom" constant="32" id="RtR-4V-GlZ"/>
+                            <constraint firstItem="7oj-4R-tad" firstAttribute="trailing" secondItem="TfX-a0-ecq" secondAttribute="trailing" id="fCG-HG-ZaL"/>
+                            <constraint firstItem="TfX-a0-ecq" firstAttribute="leading" secondItem="BcY-Ad-B3u" secondAttribute="trailing" constant="34" id="h1N-bQ-pMo"/>
+                            <constraint firstItem="BcY-Ad-B3u" firstAttribute="top" secondItem="TfX-a0-ecq" secondAttribute="top" id="nrQ-4n-J9p"/>
+                            <constraint firstItem="BcY-Ad-B3u" firstAttribute="leading" secondItem="7oj-4R-tad" secondAttribute="leading" id="qKl-el-Kbf"/>
+                            <constraint firstItem="7oj-4R-tad" firstAttribute="top" secondItem="BcY-Ad-B3u" secondAttribute="bottom" constant="46" id="rTM-tL-oQx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonOutlet" destination="TfX-a0-ecq" id="I5u-e9-zpA"/>
-                        <outlet property="notesField" destination="h3i-6c-XI6" id="u1a-wQ-Kw2"/>
+                        <outlet property="notesField" destination="7oj-4R-tad" id="NyC-gk-qbT"/>
                         <outlet property="titleTextField" destination="BcY-Ad-B3u" id="lPH-VG-6FO"/>
                     </connections>
                 </viewController>
@@ -525,6 +526,6 @@
         <image name="thickLine" width="212" height="3"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vec-WD-X3S"/>
+        <segue reference="XP1-Gj-GXf"/>
     </inferredMetricsTieBreakers>
 </document>

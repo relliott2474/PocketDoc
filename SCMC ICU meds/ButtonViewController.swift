@@ -12,7 +12,11 @@ class ButtonViewController: UIViewController {
     
     @IBOutlet weak var refArticles: UIButton!
     @IBOutlet weak var refMeds: UIButton!
-   
+    
+    @IBOutlet weak var notesButton: UIButton!
+    @IBOutlet weak var PhoneNumBtn: UIButton!
+    let buttonColor:UIColor = UIColor.redColor()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +29,7 @@ class ButtonViewController: UIViewController {
         
         //this sets the back bar button color in the navigation bar.
        navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar
         borders()
         
        /* //set a pic to the background of the title bar.
@@ -39,13 +44,16 @@ class ButtonViewController: UIViewController {
     }
     
     func borders(){
-        self.refArticles.layer.cornerRadius = 2.0
-        self.refArticles.layer.borderWidth = 1.0
-        self.refArticles.layer.borderColor = UIColor.redColor().CGColor
-        
-        self.refMeds.layer.cornerRadius = 2.0
-        self.refMeds.layer.borderWidth = 1.0
-        refMeds.layer.borderColor = UIColor.redColor().CGColor
+        //self.refArticles.layer.cornerRadius = 2.0
+        //self.refArticles.layer.borderWidth = 1.0
+        //self.refArticles.layer.borderColor = UIColor.redColor().CGColor
+        refArticles.backgroundColor = buttonColor
+        refMeds.backgroundColor = buttonColor
+        //self.refMeds.layer.cornerRadius = 2.0
+        PhoneNumBtn.backgroundColor = buttonColor
+        notesButton.backgroundColor = buttonColor
+        //self.refMeds.layer.borderWidth = 1.0
+        //refMeds.layer.borderColor = UIColor.redColor().CGColor
     }
     
     override func didReceiveMemoryWarning() {

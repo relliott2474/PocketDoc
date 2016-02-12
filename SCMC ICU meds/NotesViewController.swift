@@ -13,28 +13,32 @@ class NotesViewController: UIViewController {
     var noteTitle = ""
     var notesDescription = ""
     var buttonView = ""
-    //var note:Notes!
     
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var notesField: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
-    
+
     
     @IBAction func buttonAction(sender: AnyObject) {
         
-        if buttonView == "Save" {
+        
+            if titleTextField.text == ""{
+                emptyStringAlert()
+        } else if buttonView == "Save" {
             buttonOutlet.backgroundColor = UIColor.greenColor()
+            var name = titleTextField.text
+            name = name?.capitalizedString
+            let text = notesField.text.capitalizedString
+            let dataManager = DataManager()
+            dataManager.saveNewDataToModel(name!, dataText:text)
+        } else if buttonView == "Update"{
             var name = titleTextField.text
             name = name?.capitalizedString
             var text = notesField.text
             text = text.capitalizedString
             let dataManager = DataManager()
-            dataManager.saveNewDataToModel(name!, dataText:text)
-        }else if buttonView == "Update"{
-            let name = titleTextField.text?.capitalizedString
-            let text = notesField.text.capitalizedString
-            let dataManager = DataManager()
-            dataManager.updateData(name!, textFieldText:text)
+            dataManager.updateData(noteTitle, nameText:name!, dataText:text)
+            print("update button pushed")
         }
         
     }
@@ -43,12 +47,10 @@ class NotesViewController: UIViewController {
         super.viewDidLoad()
         title = "Note View"
         titleTextField.text = noteTitle
+        notesField.layer.cornerRadius = 10.0
         notesField.text = notesDescription
         buttonOutlet.setTitle(buttonView, forState: .Normal)
-        if buttonView == "Save" {
-            buttonOutlet.backgroundColor = UIColor.greenColor()
-            }
-        // Do any additional setup after loading the view.
+            
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +70,19 @@ class NotesViewController: UIViewController {
         
     }*/
     
-    
+    func emptyStringAlert(){
+        
+            let alert = UIAlertController(title: "Error", message: "No title given for this note.", preferredStyle: .Alert)
+            let cancelAction = UIAlertAction(title: "Ok", style: .Default) { (action:UIAlertAction) -> Void in
+                print("no title")
+            }
+            
+            presentViewController(alert, animated: true, completion: nil)
+            alert.addTextFieldWithConfigurationHandler{
+                (textField: UITextField) -> Void in
+            }
+            alert.addAction(cancelAction)
+            
+            }
     
 }
