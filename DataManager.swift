@@ -13,7 +13,6 @@ import CoreData
 class DataManager {
     
     let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
-    //let presentViewController:UIViewController
     
     func saveNewDataToModel(nameText:String, dataText:String){
         
