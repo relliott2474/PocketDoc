@@ -22,25 +22,33 @@ class NotesViewController: UIViewController {
     @IBAction func buttonAction(sender: AnyObject) {
         
         
-            if titleTextField.text == ""{
+        if titleTextField.text == ""{
                 emptyStringAlert()
+            
         } else if buttonView == "Save" {
             buttonOutlet.backgroundColor = UIColor.greenColor()
-            var name = titleTextField.text
-            name = name?.capitalizedString
+            let name = titleTextField.text
+            //name = name?.capitalizedString
             let text = notesField.text.capitalizedString
             let dataManager = DataManager()
             dataManager.saveNewDataToModel(name!, dataText:text)
+            buttonOutlet.setTitle("Update", forState: UIControlState.Normal)
+            buttonView = "Update"
+            
         } else if buttonView == "Update"{
+            buttonView = "Update"
+            buttonOutlet.setTitle("Update", forState: UIControlState.Normal)
             var name = titleTextField.text
-            name = name?.capitalizedString
+            if name != name?.capitalizedString{
+                name = name?.capitalizedString
+            }
+            
             var text = notesField.text
             text = text.capitalizedString
             let dataManager = DataManager()
             dataManager.updateData(noteTitle, nameText:name!, dataText:text)
             print("update button pushed")
         }
-        
     }
     
     override func viewDidLoad() {
@@ -49,7 +57,7 @@ class NotesViewController: UIViewController {
         titleTextField.text = noteTitle
         notesField.layer.cornerRadius = 10.0
         notesField.text = notesDescription
-        buttonOutlet.setTitle(buttonView, forState: .Normal)
+        buttonOutlet.setTitle(buttonView, forState:.Normal)
             
     }
 
@@ -72,9 +80,9 @@ class NotesViewController: UIViewController {
     
     func emptyStringAlert(){
         
-            let alert = UIAlertController(title: "Error", message: "No title given for this note.", preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Error", message: "Give your note a title.", preferredStyle: .Alert)
             let cancelAction = UIAlertAction(title: "Ok", style: .Default) { (action:UIAlertAction) -> Void in
-                print("no title")
+                //print("no title")
             }
             
             presentViewController(alert, animated: true, completion: nil)

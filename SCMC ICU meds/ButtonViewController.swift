@@ -12,9 +12,9 @@ class ButtonViewController: UIViewController {
     
     @IBOutlet weak var refArticles: UIButton!
     @IBOutlet weak var refMeds: UIButton!
-    
     @IBOutlet weak var notesButton: UIButton!
     @IBOutlet weak var PhoneNumBtn: UIButton!
+    
     let buttonColor:UIColor = UIColor.redColor()
     
     override func viewDidLoad() {

@@ -30,7 +30,7 @@ class DataManager {
                 }
             }
 
-        /*do{
+        do{
             try context.save()
             if let name = newData.valueForKey("noteTitle"){
                 if let text = newData.valueForKey("noteText"){
@@ -39,11 +39,11 @@ class DataManager {
             }
             }catch{
                 print("failed to save data")
-            }*/
+            }
          }//if statement
         }
     
-    func removeData(nameText:String){
+    /*func removeData(nameText:String){
         let context:NSManagedObjectContext = appDel.managedObjectContext
         let request = NSFetchRequest(entityName: "NoteFile")
         request.predicate = NSPredicate(format: "noteTitle = %@", nameText)
@@ -66,7 +66,7 @@ class DataManager {
         }catch{
             print("no data removed")
         }
-        }
+        }*/
     
     func updateData (title:String, nameText:String, dataText:String){
         
@@ -82,7 +82,7 @@ class DataManager {
                 for result in results as! [NSManagedObject]{
                     result.setValue(nameText,forKey:"noteTitle")
                     result.setValue(dataText, forKey:"noteText")
-                    /*do{
+                    do{
                         try context.save()
                         print("saved updated data")
                         if let newtitle = result.valueForKey("noteTitle") as? String{
@@ -92,7 +92,7 @@ class DataManager {
                         }
                     }catch {
                         print("failed to save updata data")
-                    }*/
+                    }
                 }
             }
             

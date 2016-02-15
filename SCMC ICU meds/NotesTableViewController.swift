@@ -19,7 +19,7 @@ class NotesTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.reloadData()
         title = "Notes List"
-        self.tableView.rowHeight = rowHeight
+        self.tableView.rowHeight = rowHeight + 20
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         
         // Uncomment the following line to preserve selection between presentations
@@ -65,14 +65,14 @@ class NotesTableViewController: UITableViewController {
             notesArray.removeAtIndex(indexPath.row)
             print("notesArray after removal \(notesArray)")
             tableView.reloadData()
+            
+            do{
+                try context.save()
+            }catch{
+                abort()
+            }
            
-            /*let row = Int(indexPath.row)
-            let updatedArray = notesArray[row]
-              let dataManagement = DataManager()
-              let noteInfo = updatedArray.valueForKey("noteTitle") as! String
-              dataManagement.removeData(noteInfo)
-              tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)*/
-                }
+                           }
           }
 
     // MARK: - Navigation
@@ -81,6 +81,7 @@ class NotesTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
         if segue.identifier == "showNote"{
         
          let destVC = segue.destinationViewController as! NotesViewController
@@ -92,6 +93,7 @@ class NotesTableViewController: UITableViewController {
             destVC.notesDescription = (noteArray.valueForKey("noteText") as! String)
             destVC.buttonView = "Update"
             }
+            
         }else if segue.identifier == "addNote"{
             let destVC = segue.destinationViewController as! NotesViewController
             destVC.buttonView = "Save"

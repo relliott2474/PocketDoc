@@ -156,7 +156,7 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         super.viewDidLoad()
         navigationItem.title = "Medications"
         navigationController?.navigationBar.barTintColor = UIColor.redColor()
-        self.tableView.rowHeight = 40.0
+        self.tableView.rowHeight = 60.0
    }
         // Do any additional setup after loading the view.
 
