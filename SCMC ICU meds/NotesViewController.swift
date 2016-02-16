@@ -27,8 +27,10 @@ class NotesViewController: UIViewController {
             
         } else if buttonView == "Save" {
             buttonOutlet.backgroundColor = UIColor.greenColor()
-            let name = titleTextField.text
-            //name = name?.capitalizedString
+            var name = titleTextField.text
+            if name != name?.capitalizedString{
+                name = name?.capitalizedString
+            }
             let text = notesField.text.capitalizedString
             let dataManager = DataManager()
             dataManager.saveNewDataToModel(name!, dataText:text)
@@ -42,12 +44,12 @@ class NotesViewController: UIViewController {
             if name != name?.capitalizedString{
                 name = name?.capitalizedString
             }
-            
             var text = notesField.text
             text = text.capitalizedString
             let dataManager = DataManager()
             dataManager.updateData(noteTitle, nameText:name!, dataText:text)
             print("update button pushed")
+            noteUpdatedAlert()
         }
     }
     
@@ -58,6 +60,7 @@ class NotesViewController: UIViewController {
         notesField.layer.cornerRadius = 10.0
         notesField.text = notesDescription
         buttonOutlet.setTitle(buttonView, forState:.Normal)
+        buttonOutlet.layer.cornerRadius = 10.0
             
     }
 
@@ -82,15 +85,18 @@ class NotesViewController: UIViewController {
         
             let alert = UIAlertController(title: "Error", message: "Give your note a title.", preferredStyle: .Alert)
             let cancelAction = UIAlertAction(title: "Ok", style: .Default) { (action:UIAlertAction) -> Void in
-                //print("no title")
             }
-            
             presentViewController(alert, animated: true, completion: nil)
-            alert.addTextFieldWithConfigurationHandler{
-                (textField: UITextField) -> Void in
-            }
             alert.addAction(cancelAction)
             
             }
+    
+    func noteUpdatedAlert(){
+        let alert = UIAlertController(title: "Updated", message: "Your note was updated!", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "Ok.", style: .Default) { (UIAlertAction) -> Void in
+        }
+        presentViewController(alert, animated: true, completion:nil)
+        alert.addAction(cancelAction)
+    }
     
 }

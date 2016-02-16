@@ -45,6 +45,7 @@ class PFTableViewController: PFQueryTableViewController {
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         // Do any additional setup after loading the view.
         self.tableView.rowHeight = rowHeight
+        //let aquaColor = UIColor(red: 3.0, green: 81.0, blue: 255.0, alpha: 1.0)
         self.navigationController?.navigationBar.barTintColor = UIColor.blueColor()
     }
      override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
