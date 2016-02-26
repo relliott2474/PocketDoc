@@ -60,7 +60,7 @@ class DataManager {
                 }
             }
         }catch{
-            print("no data removed")
+            print("unable to complete fetch request")
         }
         }
     
