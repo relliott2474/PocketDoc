@@ -19,7 +19,7 @@ class NotesTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.reloadData()
         title = "Notes List"
-        self.tableView.rowHeight = rowHeight
+        self.tableView.rowHeight = rowHeight + 20
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         
         // Uncomment the following line to preserve selection between presentations
@@ -35,18 +35,15 @@ class NotesTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return notesArray.count
     }
 
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("notesCell", forIndexPath: indexPath)
 
@@ -54,6 +51,7 @@ class NotesTableViewController: UITableViewController {
         let noteHeading = notesArray[indexPath.row]
         //cell.textLabel!.text = notesArray[indexPath.row].title  // if using a class
         cell.textLabel?.text = noteHeading.valueForKey("noteTitle") as? String // accesses the CoreData
+        print(notesArray[indexPath.row])
         return cell
     }
     
@@ -65,15 +63,17 @@ class NotesTableViewController: UITableViewController {
             let context = appDel.managedObjectContext
             context.deleteObject(notesArray[indexPath.row] as NSManagedObject)
             notesArray.removeAtIndex(indexPath.row)
+            print("notesArray after removal \(notesArray)")
+            tableView.reloadData()
+            
+            do{
+                try context.save()
+            }catch{
+                abort()
+            }
            
-            /*let row = Int(indexPath.row)
-            let updatedArray = notesArray[row]
-              let dataManagement = DataManager()
-              let noteInfo = updatedArray.valueForKey("noteTitle") as! String
-              dataManagement.removeData(noteInfo)*/
-              tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-                }
-    }
+                           }
+          }
 
     // MARK: - Navigation
 
@@ -81,9 +81,10 @@ class NotesTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
         if segue.identifier == "showNote"{
         
-        let destVC = segue.destinationViewController as! NotesViewController
+         let destVC = segue.destinationViewController as! NotesViewController
           if let selectedIndexPath = tableView.indexPathForSelectedRow{
             let row = Int(selectedIndexPath.row)
             let noteArray = notesArray[row]
@@ -92,20 +93,12 @@ class NotesTableViewController: UITableViewController {
             destVC.notesDescription = (noteArray.valueForKey("noteText") as! String)
             destVC.buttonView = "Update"
             }
+            
         }else if segue.identifier == "addNote"{
             let destVC = segue.destinationViewController as! NotesViewController
             destVC.buttonView = "Save"
             }
-       /* let destVC = segue.destinationViewController as! NotesViewController
-        if let selectedIndexPath = tableView.indexPathForSelectedRow{
-            let row = Int(selectedIndexPath.row)
-            let noteArray = notesArray[row]
-            //let noteForSegue = notesArray[selectedIndexPath]
-            destVC.noteTitle = (noteArray.valueForKey("noteTitle") as! String)
-            destVC.notesDescription = (noteArray.valueForKey("noteText") as! String)
-        }*/
-
-    }
+         }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

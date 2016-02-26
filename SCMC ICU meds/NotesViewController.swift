@@ -13,42 +13,55 @@ class NotesViewController: UIViewController {
     var noteTitle = ""
     var notesDescription = ""
     var buttonView = ""
-    //var note:Notes!
     
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var notesField: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
-    
+
     
     @IBAction func buttonAction(sender: AnyObject) {
         
-        if buttonView == "Save" {
+        
+        if titleTextField.text == ""{
+                emptyStringAlert()
+            
+        } else if buttonView == "Save" {
             buttonOutlet.backgroundColor = UIColor.greenColor()
             var name = titleTextField.text
-            name = name?.capitalizedString
+            if name != name?.capitalizedString{
+                name = name?.capitalizedString
+            }
+            let text = notesField.text.capitalizedString
+            let dataManager = DataManager()
+            dataManager.saveNewDataToModel(name!, dataText:text)
+            buttonOutlet.setTitle("Update", forState: UIControlState.Normal)
+            buttonView = "Update"
+            
+        } else if buttonView == "Update"{
+            buttonView = "Update"
+            buttonOutlet.setTitle("Update", forState: UIControlState.Normal)
+            var name = titleTextField.text
+            if name != name?.capitalizedString{
+                name = name?.capitalizedString
+            }
             var text = notesField.text
             text = text.capitalizedString
             let dataManager = DataManager()
-            dataManager.saveNewDataToModel(name!, dataText:text)
-        }else if buttonView == "Update"{
-            let name = titleTextField.text?.capitalizedString
-            let text = notesField.text.capitalizedString
-            let dataManager = DataManager()
-            dataManager.updateData(name!, textFieldText:text)
+            dataManager.updateData(noteTitle, nameText:name!, dataText:text)
+            print("update button pushed")
+            noteUpdatedAlert()
         }
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Note View"
         titleTextField.text = noteTitle
+        notesField.layer.cornerRadius = 10.0
         notesField.text = notesDescription
-        buttonOutlet.setTitle(buttonView, forState: .Normal)
-        if buttonView == "Save" {
-            buttonOutlet.backgroundColor = UIColor.greenColor()
-            }
-        // Do any additional setup after loading the view.
+        buttonOutlet.setTitle(buttonView, forState:.Normal)
+        buttonOutlet.layer.cornerRadius = 10.0
+            
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +81,22 @@ class NotesViewController: UIViewController {
         
     }*/
     
+    func emptyStringAlert(){
+        
+            let alert = UIAlertController(title: "Error", message: "Give your note a title.", preferredStyle: .Alert)
+            let cancelAction = UIAlertAction(title: "Ok", style: .Default) { (action:UIAlertAction) -> Void in
+            }
+            presentViewController(alert, animated: true, completion: nil)
+            alert.addAction(cancelAction)
+            
+            }
     
+    func noteUpdatedAlert(){
+        let alert = UIAlertController(title: "Updated", message: "Your note was updated!", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "Ok.", style: .Default) { (UIAlertAction) -> Void in
+        }
+        presentViewController(alert, animated: true, completion:nil)
+        alert.addAction(cancelAction)
+    }
     
 }
