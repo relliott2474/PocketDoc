@@ -44,7 +44,7 @@ class PFTableViewController: PFQueryTableViewController {
         self.title = "Reading List"
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         // Do any additional setup after loading the view.
-        self.tableView.rowHeight = rowHeight
+        self.tableView.rowHeight = rowHeight + 10
         //let aquaColor = UIColor(red: 3.0, green: 81.0, blue: 255.0, alpha: 1.0)
         self.navigationController?.navigationBar.barTintColor = UIColor.blueColor()
     }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -13,44 +13,51 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016 DNR Innovations. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="15" y="387" width="441" height="21"/>
+                    <rect key="frame" x="20" y="415" width="441" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PocketDoc" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="241" width="441" height="43"/>
+                    <rect key="frame" x="20" y="353" width="441" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoschs.png" translatesAutoresizingMaskIntoConstraints="NO" id="XQx-1d-U0I">
-                    <rect key="frame" x="100" y="68" width="280" height="98"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="280" id="FFS-Vl-lWU"/>
-                    </constraints>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks to Todd Berger, PhD, Jon Brewer, DO and Jamie Conklin, MD for their help." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2y-MB-daS">
                     <rect key="frame" x="30" y="451" width="420" height="13"/>
                     <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="11"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="275locationsBend2.png" translatesAutoresizingMaskIntoConstraints="NO" id="9n8-hZ-veT">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="177"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoschs.png" translatesAutoresizingMaskIntoConstraints="NO" id="XQx-1d-U0I">
+                    <rect key="frame" x="100" y="245" width="280" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="FFS-Vl-lWU"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="XQx-1d-U0I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="68" id="0An-hf-BT1"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="102.5" id="5cJ-9S-tgC"/>
+                <constraint firstItem="XQx-1d-U0I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="245" id="0An-hf-BT1"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="214.5" id="5cJ-9S-tgC"/>
                 <constraint firstItem="XQx-1d-U0I" firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="E4v-3Z-Va4"/>
                 <constraint firstItem="n2y-MB-daS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="FRT-Mv-BLB"/>
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="72" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" constant="4.5" id="ZEH-qu-HZ9"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="44" id="Kzo-t9-V3l"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="MfP-vx-nX0"/>
+                <constraint firstItem="9n8-hZ-veT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nf3-el-wOB"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" constant="-0.5" id="ZEH-qu-HZ9"/>
                 <constraint firstAttribute="trailing" secondItem="n2y-MB-daS" secondAttribute="trailing" constant="30" id="bC6-vs-67Y"/>
+                <constraint firstItem="9n8-hZ-veT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="erM-3a-J4h"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
                 <constraint firstAttribute="bottom" secondItem="n2y-MB-daS" secondAttribute="bottom" constant="16" id="iEp-32-Plx"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="XQx-1d-U0I" secondAttribute="bottom" constant="75" id="yhm-QL-IHi"/>
+                <constraint firstItem="9n8-hZ-veT" firstAttribute="centerX" secondItem="XQx-1d-U0I" secondAttribute="centerX" id="kFe-ii-7C9"/>
+                <constraint firstItem="XQx-1d-U0I" firstAttribute="top" secondItem="9n8-hZ-veT" secondAttribute="bottom" constant="68" id="nrD-84-IHr"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="XQx-1d-U0I" secondAttribute="bottom" constant="20" id="yhm-QL-IHi"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -58,6 +65,7 @@
         </view>
     </objects>
     <resources>
+        <image name="275locationsBend2.png" width="275" height="168"/>
         <image name="logoschs.png" width="162" height="64"/>
     </resources>
 </document>
