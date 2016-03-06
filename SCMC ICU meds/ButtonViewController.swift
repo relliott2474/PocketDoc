@@ -16,12 +16,12 @@ class ButtonViewController: UIViewController {
     @IBOutlet weak var PhoneNumBtn: UIButton!
     
     let buttonColor:UIColor = UIColor.redColor()
-    
+    let barColorTint:UIColor = UIColor(red:0.94, green:0.33, blue:0.31, alpha:1.0)
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // this sets the navigation bar Color
-        navigationController!.navigationBar.barTintColor = UIColor.redColor()
+        navigationController!.navigationBar.barTintColor = barColorTint
         
         //this sets the navigation bar title text color
         navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -43,16 +43,19 @@ class ButtonViewController: UIViewController {
     }
     
     func borders(){
+        
+        let lighterColor = UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0)
         //self.refArticles.layer.cornerRadius = 2.0
         //self.refArticles.layer.borderWidth = 1.0
         //self.refArticles.layer.borderColor = UIColor.redColor().CGColor
-        refArticles.backgroundColor = buttonColor
-        refMeds.backgroundColor = buttonColor
+        refArticles.backgroundColor = lighterColor
+        refMeds.backgroundColor = lighterColor
         //self.refMeds.layer.cornerRadius = 2.0
-        PhoneNumBtn.backgroundColor = buttonColor
-        notesButton.backgroundColor = buttonColor
+        PhoneNumBtn.backgroundColor = lighterColor
+        notesButton.backgroundColor = lighterColor
         //self.refMeds.layer.borderWidth = 1.0
         //refMeds.layer.borderColor = UIColor.redColor().CGColor
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,4 +67,5 @@ class ButtonViewController: UIViewController {
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         borders()
     }
-}
+    
+   }
