@@ -24,11 +24,11 @@ class DataManager {
             newData.setValue(nameText, forKey: "noteTitle")
             newData.setValue(dataText, forKey: "noteText")
             
-            if let name = newData.valueForKey("noteTitle"){
+            /*if let name = newData.valueForKey("noteTitle"){
                 if let text = newData.valueForKey("noteText"){
-                    //print(name, text)
+                    print(name, text)
                 }
-            }
+            }*/
 
         do{
             try context.save()
@@ -40,7 +40,7 @@ class DataManager {
             }catch{
                 print("failed to save data")
             }
-         }//if statement
+         }
         }
     
     /*func removeData(nameText:String){
