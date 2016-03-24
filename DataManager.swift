@@ -15,7 +15,6 @@ class DataManager {
     let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
     
     func saveNewDataToModel(nameText:String, dataText:String){
-        //let dateV = NSDate()
         let context: NSManagedObjectContext = appDel.managedObjectContext
         let newData = NSEntityDescription.insertNewObjectForEntityForName("NoteFile", inManagedObjectContext: context)
         // sets the new transferred data to be saved.
