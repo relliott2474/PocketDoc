@@ -93,7 +93,7 @@ class PFTableViewController: PFQueryTableViewController {
         let detailScene = segue.destinationViewController as! PFViewController
         if let indexPath = self.tableView.indexPathForSelectedRow{
             let row = Int(indexPath.row)
-            detailScene.currentObject = (objects?[row] as! PFObject)
+            detailScene.currentObject = (objects![row] )
         }
         }
     }

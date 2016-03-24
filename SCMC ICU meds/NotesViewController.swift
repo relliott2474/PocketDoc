@@ -13,6 +13,7 @@ class NotesViewController: UIViewController {
     var noteTitle = ""
     var notesDescription = ""
     var buttonView = ""
+    var noteDate = ""
     
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var notesField: UITextView!
@@ -20,7 +21,6 @@ class NotesViewController: UIViewController {
 
     
     @IBAction func buttonAction(sender: AnyObject) {
-        
         
         if titleTextField.text == ""{
                 emptyStringAlert()
@@ -33,9 +33,10 @@ class NotesViewController: UIViewController {
             }
             let text = notesField.text.capitalizedString
             let dataManager = DataManager()
-            dataManager.saveNewDataToModel(name!, dataText:text)
+            dataManager.saveNewDataToModel(name!, dataText:text)//may need to set date here.
             buttonOutlet.setTitle("Update", forState: UIControlState.Normal)
             buttonView = "Update"
+            
             
         } else if buttonView == "Update"{
             buttonView = "Update"
