@@ -50,7 +50,6 @@
 		BD7872661C8C1EBF00830B4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7872601C8C1EBF00830B4F /* Parse.framework */; };
 		BD7872671C8C1EBF00830B4F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7872611C8C1EBF00830B4F /* ParseFacebookUtils.framework */; };
 		BD7872681C8C1EBF00830B4F /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7872621C8C1EBF00830B4F /* ParseFacebookUtilsV4.framework */; };
-		BD7872691C8C1EBF00830B4F /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7872631C8C1EBF00830B4F /* ParseTwitterUtils.framework */; };
 		BD78726A1C8C1EBF00830B4F /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7872641C8C1EBF00830B4F /* ParseUI.framework */; };
 		BD9DE2F11B4A3C570013BA9A /* PFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */; };
 		BD9DE2F21B4A3C570013BA9A /* PFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */; };
@@ -117,7 +116,6 @@
 		BD7872601C8C1EBF00830B4F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BD7872611C8C1EBF00830B4F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		BD7872621C8C1EBF00830B4F /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		BD7872631C8C1EBF00830B4F /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
 		BD7872641C8C1EBF00830B4F /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFTableViewController.swift; path = ../PFTableViewController.swift; sourceTree = "<group>"; };
 		BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFViewController.swift; path = ../PFViewController.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 				014BEC801B45D6E0003918BF /* libsqlite3.dylib in Frameworks */,
 				014BEC821B45D6EE003918BF /* libz.dylib in Frameworks */,
 				BD7872661C8C1EBF00830B4F /* Parse.framework in Frameworks */,
-				BD7872691C8C1EBF00830B4F /* ParseTwitterUtils.framework in Frameworks */,
 				BD7872651C8C1EBF00830B4F /* Bolts.framework in Frameworks */,
 				BD7872681C8C1EBF00830B4F /* ParseFacebookUtilsV4.framework in Frameworks */,
 				014BEC951B45D7A8003918BF /* SystemConfiguration.framework in Frameworks */,
@@ -176,7 +173,6 @@
 				BD7872601C8C1EBF00830B4F /* Parse.framework */,
 				BD7872611C8C1EBF00830B4F /* ParseFacebookUtils.framework */,
 				BD7872621C8C1EBF00830B4F /* ParseFacebookUtilsV4.framework */,
-				BD7872631C8C1EBF00830B4F /* ParseTwitterUtils.framework */,
 				BD7872641C8C1EBF00830B4F /* ParseUI.framework */,
 				014BEC851B45D70C003918BF /* AudioToolbox.framework */,
 				014BEC831B45D705003918BF /* SystemConfiguration.framework */,
