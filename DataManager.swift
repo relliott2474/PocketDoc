@@ -68,7 +68,7 @@ class DataManager {
         }
         }*/
     
-    func updateData (title:String, nameText:String, dataText:String){
+    func updateData (title:String, nameText:String, dataText:String, upD:String){
         
         let context:NSManagedObjectContext = appDel.managedObjectContext
         let request = NSFetchRequest(entityName: "NoteFile")
@@ -82,12 +82,16 @@ class DataManager {
                 for result in results as! [NSManagedObject]{
                     result.setValue(nameText,forKey:"noteTitle")
                     result.setValue(dataText, forKey:"noteText")
+                    result.setValue(upD, forKey: "noteDate")
                     do{
                         try context.save()
                         print("saved updated data")
                         if let newtitle = result.valueForKey("noteTitle") as? String{
                             if let newdocument = result.valueForKey ("noteText") as? String{
-                                print("new data \(newtitle,newdocument)")
+                                if let newD = result.valueForKey("noteDate") as? String{
+                                   print("new data \(newtitle,newdocument, newD)")
+                                }
+                                
                             }
                         }
                     }catch {

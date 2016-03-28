@@ -48,7 +48,8 @@ class NotesViewController: UIViewController {
             var text = notesField.text
             text = text.capitalizedString
             let dataManager = DataManager()
-            dataManager.updateData(noteTitle, nameText:name!, dataText:text)
+            let newDate = dataManager.getCurrentShortDate()
+            dataManager.updateData(noteTitle, nameText:name!, dataText:text, upD:newDate)
             print("update button pushed")
             noteUpdatedAlert()
         }
