@@ -51,7 +51,7 @@ class NotesTableViewController: UITableViewController {
         let noteHeading = notesArray[indexPath.row]
         //cell.textLabel!.text = notesArray[indexPath.row].title  // if using a class
         cell.textLabel?.text = noteHeading.valueForKey("noteTitle") as? String // accesses the CoreData
-        print(notesArray[indexPath.row])
+        //print(notesArray[indexPath.row])
         return cell
     }
     
