@@ -21,7 +21,7 @@ class ButtonViewController: UIViewController {
         super.viewDidLoad()
         
         // this sets the navigation bar Color
-        navigationController!.navigationBar.barTintColor = barColorTint
+        navigationController!.navigationBar.barTintColor = buttonColor
         
         //this sets the navigation bar title text color
         navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -48,11 +48,11 @@ class ButtonViewController: UIViewController {
         //self.refArticles.layer.cornerRadius = 2.0
         //self.refArticles.layer.borderWidth = 1.0
         //self.refArticles.layer.borderColor = UIColor.redColor().CGColor
-        refArticles.backgroundColor = lighterColor
-        refMeds.backgroundColor = lighterColor
+        refArticles.backgroundColor = buttonColor
+        refMeds.backgroundColor = buttonColor
         //self.refMeds.layer.cornerRadius = 2.0
-        PhoneNumBtn.backgroundColor = lighterColor
-        notesButton.backgroundColor = lighterColor
+        PhoneNumBtn.backgroundColor = buttonColor
+        notesButton.backgroundColor = buttonColor
         //self.refMeds.layer.borderWidth = 1.0
         //refMeds.layer.borderColor = UIColor.redColor().CGColor
         

@@ -15,19 +15,20 @@ class DataManager {
     let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
     
     func saveNewDataToModel(nameText:String, dataText:String){
-        
         let context: NSManagedObjectContext = appDel.managedObjectContext
         let newData = NSEntityDescription.insertNewObjectForEntityForName("NoteFile", inManagedObjectContext: context)
         // sets the new transferred data to be saved.
         if nameText != newData{
+            let dateV = getCurrentShortDate()
+            newData.setValue(dateV, forKey: "noteDate")
             newData.setValue(nameText, forKey: "noteTitle")
             newData.setValue(dataText, forKey: "noteText")
             
-            if let name = newData.valueForKey("noteTitle"){
+            /*if let name = newData.valueForKey("noteTitle"){
                 if let text = newData.valueForKey("noteText"){
                     print(name, text)
                 }
-            }
+            }*/
 
         do{
             try context.save()
@@ -39,7 +40,7 @@ class DataManager {
             }catch{
                 print("failed to save data")
             }
-         }//if statement
+         }
         }
     
     /*func removeData(nameText:String){
@@ -100,5 +101,11 @@ class DataManager {
             print("failed to update the data")
         }
     }
-    
+    func getCurrentShortDate() -> String {
+        let todaysDate = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy"
+        let DateInFormat = dateFormatter.stringFromDate(todaysDate)
+        return DateInFormat
+    }
 }

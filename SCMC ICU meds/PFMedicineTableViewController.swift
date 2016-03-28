@@ -64,6 +64,8 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         
         if cell == nil{
             cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+            
+
         }
         
         if let articleName = object?["name"] as? String{
@@ -71,7 +73,7 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
             if let detailInfo = object?["doserange"] as? String{
                 cell?.detailTextLabel?.text = detailInfo
             }
-
+            cell?.backgroundColor = UIColor(red:1.0, green:0.92, blue:0.93, alpha:1.0)
             
         }
         return cell
@@ -144,7 +146,7 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         let destination = segue.destinationViewController as! PFMedicineViewController
         if let indexPath = self.tableView.indexPathForSelectedRow{
             let row = Int(indexPath.row)
-            destination.currentObject1 = (objects?[row] as! PFObject)
+            destination.currentObject1 = (objects![row] )
         }
 
     }
@@ -156,10 +158,10 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         super.viewDidLoad()
         navigationItem.title = "Medications"
         navigationController?.navigationBar.barTintColor = UIColor.redColor()
-        self.tableView.rowHeight = 60.0
-   }
-        // Do any additional setup after loading the view.
-
+        self.tableView.rowHeight = 50.0
+        self.tableView.backgroundColor = UIColor(red:1.0, green:0.8, blue:0.82, alpha:0.8)
+    
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

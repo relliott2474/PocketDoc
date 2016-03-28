@@ -23,11 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
         // Override point for customization after application launch.
-        NSThread.sleepForTimeInterval(1.5)
+        NSThread.sleepForTimeInterval(1.3)
         
         Parse.setApplicationId("rN7P8OZVhVjj4aGCZrWGiv4f2aUrFr1nc9sWfxRG", clientKey: "7hQc37H0DqZ2wrNjQDHZNWJvv58P52d8lMraW8C0")
         //UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         //UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
+        /*let parseConfiguration = ParseClientConfiguration(block: { (ParseMutableClientConfiguration) -> Void in
+            ParseMutableClientConfiguration.applicationId = "5tttttiuibkdi,kl000234"
+            ParseMutableClientConfiguration.clientKey = "Bijkr66724o0PX"
+            ParseMutableClientConfiguration.server = "https://pocketdoc2474.herokuapp.com/parse"
+        })
+        
+        Parse.initializeWithConfiguration(parseConfiguration)*/
         
         return true
     }
