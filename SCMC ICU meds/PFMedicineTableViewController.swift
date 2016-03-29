@@ -73,7 +73,7 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
             if let detailInfo = object?["doserange"] as? String{
                 cell?.detailTextLabel?.text = detailInfo
             }
-            cell?.backgroundColor = UIColor(red:1.0, green:0.92, blue:0.93, alpha:1.0)
+            //cell?.backgroundColor = UIColor(red:1.0, green:0.92, blue:0.93, alpha:1.0)
             
         }
         return cell
@@ -159,7 +159,7 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         navigationItem.title = "Medications"
         navigationController?.navigationBar.barTintColor = UIColor.redColor()
         self.tableView.rowHeight = 50.0
-        self.tableView.backgroundColor = UIColor(red:1.0, green:0.8, blue:0.82, alpha:0.8)
+        self.tableView.backgroundColor = UIColor(red:1.0, green:0.8, blue:0.82, alpha:0.6)
     
     }
     override func didReceiveMemoryWarning() {

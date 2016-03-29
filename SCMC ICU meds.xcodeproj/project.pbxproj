@@ -29,6 +29,7 @@
 		01C1B3BE1CA9C6D80011FE0E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3B81CA9C6D80011FE0E /* ParseFacebookUtils.framework */; };
 		01C1B3BF1CA9C6D80011FE0E /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3B91CA9C6D80011FE0E /* ParseFacebookUtilsV4.framework */; };
 		01C1B3C11CA9C6D80011FE0E /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3BB1CA9C6D80011FE0E /* ParseUI.framework */; };
+		01C1B3C31CAAEDC60011FE0E /* logoschs.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C1B3C21CAAEDC60011FE0E /* logoschs.png */; };
 		BD4517281C5EA50C00D83AB8 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4517271C5EA50C00D83AB8 /* PhoneNumberViewController.swift */; };
 		BD45172A1C5EA70D00D83AB8 /* MedicinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4517291C5EA70D00D83AB8 /* MedicinesTableViewCell.swift */; };
 		BD5F654D1B5AE93900CF0FAA /* PFMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */; };
@@ -76,6 +77,7 @@
 		01C1B3B81CA9C6D80011FE0E /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		01C1B3B91CA9C6D80011FE0E /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		01C1B3BB1CA9C6D80011FE0E /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		01C1B3C21CAAEDC60011FE0E /* logoschs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoschs.png; sourceTree = "<group>"; };
 		BD4517271C5EA50C00D83AB8 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		BD4517291C5EA70D00D83AB8 /* MedicinesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesTableViewCell.swift; sourceTree = "<group>"; };
 		BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFMedicineTableViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				014BEC971B45D85B003918BF /* SCMC-ICU-meds-Bridging-Header.h */,
 				010F0C881C334D9B0048F0DB /* CDNoteList.xcdatamodeld */,
 				018A76E31A79A588007E624B /* Images.xcassets */,
+				01C1B3C21CAAEDC60011FE0E /* logoschs.png */,
 				01B326181A841A2800FE6D1C /* thickLine@2x.png */,
 				018A76E51A79A588007E624B /* LaunchScreen.xib */,
 				018A76DA1A79A588007E624B /* Supporting Files */,
@@ -288,6 +291,7 @@
 				01B326191A841A2800FE6D1C /* thickLine@2x.png in Resources */,
 				018A76E21A79A588007E624B /* Main.storyboard in Resources */,
 				018A76E71A79A588007E624B /* LaunchScreen.xib in Resources */,
+				01C1B3C31CAAEDC60011FE0E /* logoschs.png in Resources */,
 				018A76E41A79A588007E624B /* Images.xcassets in Resources */,
 				015318A91B698FDE00EE8D73 /* 275locationsBend2.png in Resources */,
 			);
