@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixb-V3-EGd">
-                                <rect key="frame" x="0.0" y="38" width="600" height="84"/>
+                                <rect key="frame" x="0.0" y="90" width="600" height="84"/>
                                 <color key="backgroundColor" red="1" green="0.15491361100000001" blue="0.31008956780000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="9E8-Sj-Zye"/>
@@ -72,21 +72,6 @@
                                 </state>
                                 <connections>
                                     <segue destination="cip-jM-3hd" kind="show" identifier="pdfSegue" id="Cn0-J7-0t3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lc-10-XfV">
-                                <rect key="frame" x="0.0" y="136" width="600" height="84"/>
-                                <color key="backgroundColor" red="1" green="0.15491361100000001" blue="0.31008956780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="NHo-Gd-OJP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="23"/>
-                                <state key="normal" title="Personal Notes">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8de-aX-kYy" kind="show" id="1gz-6Z-34A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcI-xe-zi6">
@@ -104,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-6f-8Eg">
-                                <rect key="frame" x="0.0" y="238" width="600" height="84"/>
+                                <rect key="frame" x="0.0" y="304" width="600" height="84"/>
                                 <color key="backgroundColor" red="1" green="0.15491361100000001" blue="0.31008956780000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="XfC-sz-v7n"/>
@@ -118,18 +103,33 @@
                                     <segue destination="nRV-dP-dWf" kind="show" id="S1h-gW-k2D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lc-10-XfV">
+                                <rect key="frame" x="0.0" y="197" width="600" height="84"/>
+                                <color key="backgroundColor" red="1" green="0.15491361100000001" blue="0.31008956780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="NHo-Gd-OJP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="23"/>
+                                <state key="normal" title="Personal Notes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8de-aX-kYy" kind="show" id="1gz-6Z-34A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HRV-6f-8Eg" firstAttribute="centerX" secondItem="ixb-V3-EGd" secondAttribute="centerX" id="0f9-eH-m55"/>
-                            <constraint firstItem="2lc-10-XfV" firstAttribute="top" secondItem="ixb-V3-EGd" secondAttribute="bottom" constant="14" id="14i-Th-Ca2"/>
-                            <constraint firstItem="ixb-V3-EGd" firstAttribute="top" secondItem="BTB-BP-kKy" secondAttribute="bottom" priority="750" constant="38" id="3ZH-BM-tMF"/>
+                            <constraint firstItem="2lc-10-XfV" firstAttribute="top" secondItem="ixb-V3-EGd" secondAttribute="bottom" constant="23" id="14i-Th-Ca2"/>
+                            <constraint firstItem="ixb-V3-EGd" firstAttribute="top" secondItem="BTB-BP-kKy" secondAttribute="bottom" priority="750" constant="90" id="3ZH-BM-tMF"/>
                             <constraint firstItem="NcI-xe-zi6" firstAttribute="leading" secondItem="UGT-Gm-dxj" secondAttribute="leadingMargin" constant="78" id="OEv-gs-QcQ"/>
                             <constraint firstItem="HRV-6f-8Eg" firstAttribute="leading" secondItem="UGT-Gm-dxj" secondAttribute="leading" id="Smv-a1-Gcw"/>
                             <constraint firstItem="HRV-6f-8Eg" firstAttribute="leading" secondItem="2lc-10-XfV" secondAttribute="leading" id="Tw9-WK-f8e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NcI-xe-zi6" secondAttribute="trailing" constant="77" id="WIq-3B-wbW"/>
-                            <constraint firstItem="NcI-xe-zi6" firstAttribute="top" secondItem="HRV-6f-8Eg" secondAttribute="bottom" priority="750" constant="159" id="awQ-yK-2UR"/>
-                            <constraint firstItem="HRV-6f-8Eg" firstAttribute="top" secondItem="2lc-10-XfV" secondAttribute="bottom" constant="18" id="my7-tM-qRf"/>
+                            <constraint firstItem="NcI-xe-zi6" firstAttribute="top" secondItem="HRV-6f-8Eg" secondAttribute="bottom" priority="750" constant="93" id="awQ-yK-2UR"/>
+                            <constraint firstItem="HRV-6f-8Eg" firstAttribute="top" secondItem="2lc-10-XfV" secondAttribute="bottom" constant="23" id="my7-tM-qRf"/>
                             <constraint firstItem="2lc-10-XfV" firstAttribute="centerX" secondItem="ixb-V3-EGd" secondAttribute="centerX" id="q4n-2N-vdw"/>
                             <constraint firstItem="2jP-wc-gEG" firstAttribute="top" secondItem="NcI-xe-zi6" secondAttribute="bottom" constant="27" id="tNK-Rn-qnf"/>
                             <constraint firstItem="2lc-10-XfV" firstAttribute="centerX" secondItem="UGT-Gm-dxj" secondAttribute="centerX" id="ur7-8X-hCg"/>
