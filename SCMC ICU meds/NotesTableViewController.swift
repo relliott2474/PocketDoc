@@ -19,7 +19,7 @@ class NotesTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.reloadData()
         title = "Notes List"
-        self.tableView.rowHeight = rowHeight + 20
+        self.tableView.rowHeight = rowHeight + 10
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         
         // Uncomment the following line to preserve selection between presentations
