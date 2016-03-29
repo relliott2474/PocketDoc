@@ -9,19 +9,7 @@
 /* Begin PBXBuildFile section */
 		010F0C8A1C334D9B0048F0DB /* CDNoteList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 010F0C881C334D9B0048F0DB /* CDNoteList.xcdatamodeld */; };
 		010F66441C569EE7006E82A4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F66431C569EE7006E82A4 /* DataManager.swift */; };
-		012E723E1A7C68AE007E1A0B /* TableArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 012E723D1A7C68AE007E1A0B /* TableArray.plist */; };
-		01320C381AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 01320C371AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf */; };
-		01320C3A1AE575DD001F25A1 /* Stroke Core Measures.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 01320C391AE575DD001F25A1 /* Stroke Core Measures.pdf */; };
 		01320C3C1AE694B3001F25A1 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01320C3B1AE694B3001F25A1 /* EmailViewController.swift */; };
-		0143E9521AD7348D002B286E /* NeuroCC BP Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9511AD7348D002B286E /* NeuroCC BP Guidelines.pdf */; };
-		0143E9541AD734DA002B286E /* MG vs Eaton-Lambert.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9531AD734DA002B286E /* MG vs Eaton-Lambert.pdf */; };
-		0143E9561AD7353D002B286E /* Bronchiolitis Obliterans.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9551AD7353D002B286E /* Bronchiolitis Obliterans.pdf */; };
-		0143E9581AD73567002B286E /* OHSU Coag Reversal.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9571AD73567002B286E /* OHSU Coag Reversal.pdf */; };
-		0143E95A1AD735B6002B286E /* Bleeding Dyscrasias.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9591AD735B6002B286E /* Bleeding Dyscrasias.pdf */; };
-		0143E95C1AD735DC002B286E /* Hemolytic Reactions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95B1AD735DC002B286E /* Hemolytic Reactions.pdf */; };
-		0143E95E1AD73618002B286E /* Sepsis Definitions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */; };
-		0143E9601AD7364C002B286E /* Toxicololgy in ICU 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */; };
-		0143E9621AD73667002B286E /* Toxicology in ICU 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */; };
 		014B09981C2F5837001FE552 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B09971C2F5837001FE552 /* NotesTableViewController.swift */; };
 		014B099A1C2F5847001FE552 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014B09991C2F5847001FE552 /* NotesViewController.swift */; };
 		014BEC7E1B45D6D6003918BF /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC7D1B45D6D6003918BF /* libstdc++.6.dylib */; };
@@ -30,30 +18,23 @@
 		014BEC941B45D793003918BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC851B45D70C003918BF /* AudioToolbox.framework */; };
 		014BEC951B45D7A8003918BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014BEC831B45D705003918BF /* SystemConfiguration.framework */; };
 		015318A91B698FDE00EE8D73 /* 275locationsBend2.png in Resources */ = {isa = PBXBuildFile; fileRef = 015318A81B698FDE00EE8D73 /* 275locationsBend2.png */; };
-		016741B11A9D586B00407948 /* logoschs.png in Resources */ = {isa = PBXBuildFile; fileRef = 016741B01A9D586B00407948 /* logoschs.png */; };
-		016741B31A9D5BC300407948 /* logoschs80.png in Resources */ = {isa = PBXBuildFile; fileRef = 016741B21A9D5BC300407948 /* logoschs80.png */; };
 		018A76DD1A79A588007E624B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A76DC1A79A588007E624B /* AppDelegate.swift */; };
 		018A76E21A79A588007E624B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018A76E01A79A588007E624B /* Main.storyboard */; };
 		018A76E41A79A588007E624B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018A76E31A79A588007E624B /* Images.xcassets */; };
 		018A76E71A79A588007E624B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018A76E51A79A588007E624B /* LaunchScreen.xib */; };
 		018A76F31A79A588007E624B /* SCMC_ICU_medsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A76F21A79A588007E624B /* SCMC_ICU_medsTests.swift */; };
 		01B326191A841A2800FE6D1C /* thickLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B326181A841A2800FE6D1C /* thickLine@2x.png */; };
-		01B3261C1A84208300FE6D1C /* Capsule_Red 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B3261A1A84208300FE6D1C /* Capsule_Red 120.png */; };
-		01B3261D1A84208300FE6D1C /* Capsule_Red 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */; };
 		01C1B3BC1CA9C6D80011FE0E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3B61CA9C6D80011FE0E /* Bolts.framework */; };
 		01C1B3BD1CA9C6D80011FE0E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3B71CA9C6D80011FE0E /* Parse.framework */; };
 		01C1B3BE1CA9C6D80011FE0E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3B81CA9C6D80011FE0E /* ParseFacebookUtils.framework */; };
 		01C1B3BF1CA9C6D80011FE0E /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3B91CA9C6D80011FE0E /* ParseFacebookUtilsV4.framework */; };
 		01C1B3C11CA9C6D80011FE0E /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C1B3BB1CA9C6D80011FE0E /* ParseUI.framework */; };
-		01C82E091A8582940018434E /* Caduceus 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C82E071A8582940018434E /* Caduceus 120.png */; };
-		01C82E0A1A8582940018434E /* Caduceus 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C82E081A8582940018434E /* Caduceus 180.png */; };
 		BD4517281C5EA50C00D83AB8 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4517271C5EA50C00D83AB8 /* PhoneNumberViewController.swift */; };
 		BD45172A1C5EA70D00D83AB8 /* MedicinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4517291C5EA70D00D83AB8 /* MedicinesTableViewCell.swift */; };
 		BD5F654D1B5AE93900CF0FAA /* PFMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */; };
 		BD5F654F1B5AE96100CF0FAA /* PFMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */; };
 		BD9DE2F11B4A3C570013BA9A /* PFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */; };
 		BD9DE2F21B4A3C570013BA9A /* PFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */; };
-		BDA924001AD6675100917AA2 /* pdf List.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA923FF1AD6675100917AA2 /* pdf List.plist */; };
 		BDA9240A1AD66A1E00917AA2 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA924091AD66A1E00917AA2 /* ButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,19 +51,7 @@
 /* Begin PBXFileReference section */
 		010F0C891C334D9B0048F0DB /* CDNoteList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDNoteList.xcdatamodel; sourceTree = "<group>"; };
 		010F66431C569EE7006E82A4 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = ../DataManager.swift; sourceTree = "<group>"; };
-		012E723D1A7C68AE007E1A0B /* TableArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TableArray.plist; sourceTree = "<group>"; };
-		01320C371AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2015 Clinical Guidelines Core Measures.pdf"; sourceTree = "<group>"; };
-		01320C391AE575DD001F25A1 /* Stroke Core Measures.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Stroke Core Measures.pdf"; sourceTree = "<group>"; };
 		01320C3B1AE694B3001F25A1 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
-		0143E9511AD7348D002B286E /* NeuroCC BP Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NeuroCC BP Guidelines.pdf"; sourceTree = "<group>"; };
-		0143E9531AD734DA002B286E /* MG vs Eaton-Lambert.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "MG vs Eaton-Lambert.pdf"; sourceTree = "<group>"; };
-		0143E9551AD7353D002B286E /* Bronchiolitis Obliterans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bronchiolitis Obliterans.pdf"; sourceTree = "<group>"; };
-		0143E9571AD73567002B286E /* OHSU Coag Reversal.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OHSU Coag Reversal.pdf"; sourceTree = "<group>"; };
-		0143E9591AD735B6002B286E /* Bleeding Dyscrasias.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bleeding Dyscrasias.pdf"; sourceTree = "<group>"; };
-		0143E95B1AD735DC002B286E /* Hemolytic Reactions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hemolytic Reactions.pdf"; sourceTree = "<group>"; };
-		0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Sepsis Definitions.pdf"; sourceTree = "<group>"; };
-		0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Toxicololgy in ICU 3.pdf"; sourceTree = "<group>"; };
-		0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Toxicology in ICU 2.pdf"; sourceTree = "<group>"; };
 		014B09971C2F5837001FE552 /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		014B09991C2F5847001FE552 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		014BEC7D1B45D6D6003918BF /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
@@ -92,8 +61,6 @@
 		014BEC851B45D70C003918BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		014BEC971B45D85B003918BF /* SCMC-ICU-meds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCMC-ICU-meds-Bridging-Header.h"; sourceTree = "<group>"; };
 		015318A81B698FDE00EE8D73 /* 275locationsBend2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 275locationsBend2.png; sourceTree = "<group>"; };
-		016741B01A9D586B00407948 /* logoschs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoschs.png; sourceTree = "<group>"; };
-		016741B21A9D5BC300407948 /* logoschs80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoschs80.png; sourceTree = "<group>"; };
 		018A76D71A79A588007E624B /* SCMC ICU meds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCMC ICU meds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		018A76DB1A79A588007E624B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018A76DC1A79A588007E624B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,22 +71,17 @@
 		018A76F11A79A588007E624B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018A76F21A79A588007E624B /* SCMC_ICU_medsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMC_ICU_medsTests.swift; sourceTree = "<group>"; };
 		01B326181A841A2800FE6D1C /* thickLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thickLine@2x.png"; sourceTree = "<group>"; };
-		01B3261A1A84208300FE6D1C /* Capsule_Red 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capsule_Red 120.png"; sourceTree = "<group>"; };
-		01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Capsule_Red 180.png"; sourceTree = "<group>"; };
 		01C1B3B61CA9C6D80011FE0E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		01C1B3B71CA9C6D80011FE0E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		01C1B3B81CA9C6D80011FE0E /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		01C1B3B91CA9C6D80011FE0E /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		01C1B3BB1CA9C6D80011FE0E /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		01C82E071A8582940018434E /* Caduceus 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus 120.png"; sourceTree = "<group>"; };
-		01C82E081A8582940018434E /* Caduceus 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus 180.png"; sourceTree = "<group>"; };
 		BD4517271C5EA50C00D83AB8 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		BD4517291C5EA70D00D83AB8 /* MedicinesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesTableViewCell.swift; sourceTree = "<group>"; };
 		BD5F654C1B5AE93900CF0FAA /* PFMedicineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFMedicineTableViewController.swift; sourceTree = "<group>"; };
 		BD5F654E1B5AE96100CF0FAA /* PFMedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFMedicineViewController.swift; sourceTree = "<group>"; };
 		BD9DE2EF1B4A3C570013BA9A /* PFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFTableViewController.swift; path = ../PFTableViewController.swift; sourceTree = "<group>"; };
 		BD9DE2F01B4A3C570013BA9A /* PFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PFViewController.swift; path = ../PFViewController.swift; sourceTree = "<group>"; };
-		BDA923FF1AD6675100917AA2 /* pdf List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pdf List.plist"; sourceTree = "<group>"; };
 		BDA924091AD66A1E00917AA2 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,21 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0143E9631AD738CA002B286E /* Reference Medications */ = {
-			isa = PBXGroup;
-			children = (
-				01B3261B1A84208300FE6D1C /* Capsule_Red 180.png */,
-				01C82E071A8582940018434E /* Caduceus 120.png */,
-				01C82E081A8582940018434E /* Caduceus 180.png */,
-				01B326181A841A2800FE6D1C /* thickLine@2x.png */,
-				012E723D1A7C68AE007E1A0B /* TableArray.plist */,
-				016741B01A9D586B00407948 /* logoschs.png */,
-				016741B21A9D5BC300407948 /* logoschs80.png */,
-				01B3261A1A84208300FE6D1C /* Capsule_Red 120.png */,
-			);
-			name = "Reference Medications";
-			sourceTree = "<group>";
-		};
 		014BEC871B45D74D003918BF /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +168,7 @@
 				014BEC971B45D85B003918BF /* SCMC-ICU-meds-Bridging-Header.h */,
 				010F0C881C334D9B0048F0DB /* CDNoteList.xcdatamodeld */,
 				018A76E31A79A588007E624B /* Images.xcassets */,
+				01B326181A841A2800FE6D1C /* thickLine@2x.png */,
 				018A76E51A79A588007E624B /* LaunchScreen.xib */,
 				018A76DA1A79A588007E624B /* Supporting Files */,
 			);
@@ -233,8 +181,6 @@
 				015318A81B698FDE00EE8D73 /* 275locationsBend2.png */,
 				014BEC871B45D74D003918BF /* frameworks */,
 				018A76DB1A79A588007E624B /* Info.plist */,
-				BDA923FC1AD6667400917AA2 /* Reference Articles */,
-				0143E9631AD738CA002B286E /* Reference Medications */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -254,25 +200,6 @@
 				018A76F11A79A588007E624B /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BDA923FC1AD6667400917AA2 /* Reference Articles */ = {
-			isa = PBXGroup;
-			children = (
-				01320C371AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf */,
-				01320C391AE575DD001F25A1 /* Stroke Core Measures.pdf */,
-				0143E9511AD7348D002B286E /* NeuroCC BP Guidelines.pdf */,
-				0143E9571AD73567002B286E /* OHSU Coag Reversal.pdf */,
-				0143E9531AD734DA002B286E /* MG vs Eaton-Lambert.pdf */,
-				BDA923FF1AD6675100917AA2 /* pdf List.plist */,
-				0143E9551AD7353D002B286E /* Bronchiolitis Obliterans.pdf */,
-				0143E95B1AD735DC002B286E /* Hemolytic Reactions.pdf */,
-				0143E9611AD73667002B286E /* Toxicology in ICU 2.pdf */,
-				0143E95F1AD7364C002B286E /* Toxicololgy in ICU 3.pdf */,
-				0143E95D1AD73618002B286E /* Sepsis Definitions.pdf */,
-				0143E9591AD735B6002B286E /* Bleeding Dyscrasias.pdf */,
-			);
-			name = "Reference Articles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,30 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01320C381AE575D8001F25A1 /* 2015 Clinical Guidelines Core Measures.pdf in Resources */,
 				01B326191A841A2800FE6D1C /* thickLine@2x.png in Resources */,
-				0143E95E1AD73618002B286E /* Sepsis Definitions.pdf in Resources */,
-				0143E9561AD7353D002B286E /* Bronchiolitis Obliterans.pdf in Resources */,
-				0143E9601AD7364C002B286E /* Toxicololgy in ICU 3.pdf in Resources */,
-				0143E9621AD73667002B286E /* Toxicology in ICU 2.pdf in Resources */,
 				018A76E21A79A588007E624B /* Main.storyboard in Resources */,
-				0143E95A1AD735B6002B286E /* Bleeding Dyscrasias.pdf in Resources */,
-				01C82E0A1A8582940018434E /* Caduceus 180.png in Resources */,
-				016741B11A9D586B00407948 /* logoschs.png in Resources */,
-				01B3261C1A84208300FE6D1C /* Capsule_Red 120.png in Resources */,
-				0143E9541AD734DA002B286E /* MG vs Eaton-Lambert.pdf in Resources */,
-				01C82E091A8582940018434E /* Caduceus 120.png in Resources */,
-				016741B31A9D5BC300407948 /* logoschs80.png in Resources */,
-				BDA924001AD6675100917AA2 /* pdf List.plist in Resources */,
 				018A76E71A79A588007E624B /* LaunchScreen.xib in Resources */,
-				0143E95C1AD735DC002B286E /* Hemolytic Reactions.pdf in Resources */,
-				0143E9521AD7348D002B286E /* NeuroCC BP Guidelines.pdf in Resources */,
 				018A76E41A79A588007E624B /* Images.xcassets in Resources */,
-				01B3261D1A84208300FE6D1C /* Capsule_Red 180.png in Resources */,
-				0143E9581AD73567002B286E /* OHSU Coag Reversal.pdf in Resources */,
 				015318A91B698FDE00EE8D73 /* 275locationsBend2.png in Resources */,
-				012E723E1A7C68AE007E1A0B /* TableArray.plist in Resources */,
-				01320C3A1AE575DD001F25A1 /* Stroke Core Measures.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

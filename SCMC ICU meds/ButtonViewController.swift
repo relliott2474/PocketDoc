@@ -44,14 +44,14 @@ class ButtonViewController: UIViewController {
     
     func borders(){
         
-        let lighterColor = UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0)
+        //let lighterColor = UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0)
         //self.refArticles.layer.cornerRadius = 2.0
         //self.refArticles.layer.borderWidth = 1.0
         //self.refArticles.layer.borderColor = UIColor.redColor().CGColor
         refArticles.backgroundColor = buttonColor
         refMeds.backgroundColor = buttonColor
         //self.refMeds.layer.cornerRadius = 2.0
-        PhoneNumBtn.backgroundColor = buttonColor
+        //PhoneNumBtn.backgroundColor = buttonColor
         notesButton.backgroundColor = buttonColor
         //self.refMeds.layer.borderWidth = 1.0
         //refMeds.layer.borderColor = UIColor.redColor().CGColor

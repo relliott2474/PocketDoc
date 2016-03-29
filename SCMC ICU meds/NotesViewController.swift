@@ -18,8 +18,6 @@ class NotesViewController: UIViewController {
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var notesField: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
-
-    
     @IBAction func buttonAction(sender: AnyObject) {
         
         if titleTextField.text == ""{
@@ -52,6 +50,7 @@ class NotesViewController: UIViewController {
             dataManager.updateData(noteTitle, nameText:name!, dataText:text, upD:newDate)
             print("update button pushed")
             noteUpdatedAlert()
+            
         }
     }
     
@@ -59,6 +58,7 @@ class NotesViewController: UIViewController {
         super.viewDidLoad()
         title = "Note View"
         titleTextField.text = noteTitle
+        titleTextField.adjustsFontSizeToFitWidth = true
         notesField.layer.cornerRadius = 10.0
         notesField.text = notesDescription
         buttonOutlet.setTitle(buttonView, forState:.Normal)
@@ -68,20 +68,8 @@ class NotesViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    /*override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        titleTextField.text = note.title
-        notesField.text = note.noteText
-    }
 
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        note.title = titleTextField.text!
-        note.noteText = notesField.text
-        
-    }*/
+    }
     
     func emptyStringAlert(){
         
@@ -99,6 +87,14 @@ class NotesViewController: UIViewController {
         }
         presentViewController(alert, animated: true, completion:nil)
         alert.addAction(cancelAction)
+        
+    }
+    
+   @IBAction func textFieldDoneEditing(sender:UITextField){
+        sender.resignFirstResponder()
+    }
+    @IBAction func DismissKeyboard(sender:AnyObject){
+        notesField.resignFirstResponder()
     }
     
 }
