@@ -12,6 +12,8 @@ import Bolts
 import ParseUI
 import QuartzCore
 
+// need to make available when do not have internet access. Stored in cache?
+
 class PFTableViewController: PFQueryTableViewController {
 
     
