@@ -43,30 +43,6 @@ class DataManager {
          }
         }
     
-    /*func removeData(nameText:String){
-        let context:NSManagedObjectContext = appDel.managedObjectContext
-        let request = NSFetchRequest(entityName: "NoteFile")
-        request.predicate = NSPredicate(format: "noteTitle = %@", nameText)
-        request.returnsObjectsAsFaults = false
-        
-        do{
-            let results = try context.executeFetchRequest(request)
-            if results.count > 0{
-                for result in results as! [NSManagedObject]{
-                    context.deleteObject(result)
-                    do{
-                        try context.save()
-                        print("data removed")
-                        print(context)
-                    }catch{
-                        print("no data removed")
-                    }
-                }
-            }
-        }catch{
-            print("unable to complete fetch request")
-        }
-        }*/
     
     func updateData (title:String, nameText:String, dataText:String, upD:String){
         

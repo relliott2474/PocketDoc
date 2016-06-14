@@ -16,16 +16,18 @@ import QuartzCore
 
 class PFTableViewController: PFQueryTableViewController {
 
+     //var pdfWebViewData = [AnyObject]()
     
     override func queryForTable() -> PFQuery {
     let query = PFQuery(className: "TestDataString")
         if(objects?.count == 0){
             query.cachePolicy = PFCachePolicy.CacheThenNetwork
-        }
+            }
+    
         query.orderByAscending("artNames")
         return query
+
     }
-    
     // Initialise the PFQueryTable tableview
     override init(style: UITableViewStyle, className: String!) {
         super.init(style: style, className: className)
@@ -49,6 +51,8 @@ class PFTableViewController: PFQueryTableViewController {
         self.tableView.rowHeight = rowHeight + 10
         //let aquaColor = UIColor(red: 3.0, green: 81.0, blue: 255.0, alpha: 1.0)
         self.navigationController?.navigationBar.barTintColor = UIColor.blueColor()
+        
+        
     }
      override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         //attempting to make a new label cell for view controller
@@ -62,7 +66,7 @@ class PFTableViewController: PFQueryTableViewController {
             cell?.textLabel?.text = articleName
             }
         
-        
+        //backGroundData()
        /* let startColor:UIColor = UIColor.redColor()
         let endColor: UIColor = UIColor.purpleColor()
         //let startColor2:UIColor = UIColor(red: 0.5, green: 0.0, blue: 0.5, alpha: 0.1)
@@ -99,4 +103,6 @@ class PFTableViewController: PFQueryTableViewController {
         }
         }
     }
+    
+    
 }

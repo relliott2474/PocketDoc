@@ -46,8 +46,7 @@ class NotesTableViewController: UITableViewController {
         let noteHeading = notesArray[indexPath.row]
         //cell.textLabel!.text = notesArray[indexPath.row].title  // if using a class
         cell.textLabel?.text = noteHeading.valueForKey("noteTitle") as? String // accesses the CoreData
-        cell.detailTextLabel?.text = noteHeading.valueForKey("noteDate") as? String//displays the note date. 
-        //print(notesArray[indexPath.row])
+        cell.detailTextLabel?.text = noteHeading.valueForKey("noteDate") as? String//displays the note date.
         return cell
     }
     
@@ -59,7 +58,7 @@ class NotesTableViewController: UITableViewController {
             let context = appDel.managedObjectContext
             context.deleteObject(notesArray[indexPath.row] as NSManagedObject)
             notesArray.removeAtIndex(indexPath.row)
-            print("notesArray after removal \(notesArray)")
+            //print("notesArray after removal \(notesArray)")
             tableView.reloadData()
             
             do{
@@ -75,8 +74,6 @@ class NotesTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         
         if segue.identifier == "showNote"{
         
