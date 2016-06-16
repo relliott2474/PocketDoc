@@ -208,6 +208,7 @@
 				014BEC971B45D85B003918BF /* SCMC-ICU-meds-Bridging-Header.h */,
 				018A76E31A79A588007E624B /* Images.xcassets */,
 				018A76E51A79A588007E624B /* LaunchScreen.xib */,
+				015318A81B698FDE00EE8D73 /* 275locationsBend2.png */,
 				018A76DA1A79A588007E624B /* Supporting Files */,
 			);
 			path = "SCMC ICU meds";
@@ -216,7 +217,6 @@
 		018A76DA1A79A588007E624B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				015318A81B698FDE00EE8D73 /* 275locationsBend2.png */,
 				014BEC871B45D74D003918BF /* frameworks */,
 				018A76DB1A79A588007E624B /* Info.plist */,
 				BDA923FC1AD6667400917AA2 /* Reference Articles */,
