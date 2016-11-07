@@ -13,7 +13,7 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor.yellowColor()
+        navigationController?.navigationBar.barTintColor = UIColor.yellow
         if (MFMailComposeViewController.canSendMail()) {
             
             let emailTitle = "DNR Innovations Feedback"
@@ -32,7 +32,7 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
             
             mc.setToRecipients(toRecipents)
             
-            self.presentViewController(mc, animated: true, completion: nil)
+            self.present(mc, animated: true, completion: nil)
             
         }else {
             
@@ -44,21 +44,21 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
 
     // Email Delegate
-    func mailComposeController(controller:MFMailComposeViewController, didFinishWithResult result:MFMailComposeResult, error:NSError?) {
+    func mailComposeController(_ controller:MFMailComposeViewController, didFinishWith result:MFMailComposeResult, error:Error?) {
         
         switch result.rawValue {
-        case MFMailComposeResultCancelled.rawValue:
+        case MFMailComposeResult.cancelled.rawValue:
             print("Mail cancelled", terminator: "")
-        case MFMailComposeResultSaved.rawValue:
+        case MFMailComposeResult.saved.rawValue:
             print("Mail saved", terminator: "")
-        case MFMailComposeResultSent.rawValue:
+        case MFMailComposeResult.sent.rawValue:
             print("Mail sent", terminator: "")
-        case MFMailComposeResultFailed.rawValue:
+        case MFMailComposeResult.failed.rawValue:
             print("Mail sent failure: \(error!.localizedDescription)", terminator: "")
         default:
             break
         }
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismiss(animated: false, completion: nil)
         
     }
 

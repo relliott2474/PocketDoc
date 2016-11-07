@@ -22,16 +22,16 @@ class PFMedicineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let object = currentObject1{
-            let nameObject: AnyObject? = object.objectForKey("name")
+            let nameObject: AnyObject? = object.object(forKey: "name")
             nameLabel.text = nameObject as? String
             //navigationItem.title = nameObject as? String
             
             //does label
-            let doseObject:AnyObject? = object.objectForKey("doserange")
+            let doseObject:AnyObject? = object.object(forKey: "doserange")
             doseLabel.text = doseObject as? String
             
             // textview
-            let textObject:AnyObject? = object.objectForKey("textInfo")
+            let textObject:AnyObject? = object.object(forKey: "textInfo")
             textInfo.text = textObject as? String
         }
         // Do any additional setup after loading the view.

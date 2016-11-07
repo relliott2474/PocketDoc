@@ -29,18 +29,18 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
     let indexOfClasses = ["Cardiac", "Hemostasis", "Neuro", "Pressors", "Reversal Agents", "Sedatives"]
     //let kSectionCount:Int = indexOfClasses.count
     
-    override func queryForTable() -> PFQuery {
+    override func queryForTable() -> PFQuery<PFObject> {
         let query = PFQuery(className: "Medications")
         if(objects?.count == 0){
-        query.cachePolicy = PFCachePolicy.CacheThenNetwork
+        query.cachePolicy = PFCachePolicy.cacheThenNetwork
         }
         
         if searchBar.text != "" {
 
-          _ =  query.whereKey("name", matchesRegex:searchBar.text!.capitalizedString, modifiers:"i")
+          _ =  query.whereKey("name", matchesRegex:searchBar.text!.capitalized, modifiers:"i")
         }
 
-        query.orderByAscending("name")
+        query.order(byAscending: "name")
         return query
     }
     // Initialise the PFQueryTable tableview
@@ -58,12 +58,12 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         self.paginationEnabled = false
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, object: PFObject?) -> PFTableViewCell? {
         
-        var cell:PFTableViewCell? = tableView.dequeueReusableCellWithIdentifier("cell") as? PFTableViewCell!
+        var cell:PFTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell") as? PFTableViewCell!
         
         if cell == nil{
-            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+            cell = PFTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
             
 
         }
@@ -142,22 +142,22 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
 
     
     */
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destination = segue.destinationViewController as! PFMedicineViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! PFMedicineViewController
         if let indexPath = self.tableView.indexPathForSelectedRow{
             let row = Int(indexPath.row)
             destination.currentObject1 = (objects![row] )
         }
 
     }
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
         searchBar.delegate = self
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Medications"
-        navigationController?.navigationBar.barTintColor = UIColor.redColor()
+        navigationController?.navigationBar.barTintColor = UIColor.red
         self.tableView.rowHeight = 50.0
         self.tableView.backgroundColor = UIColor(red:1.0, green:0.8, blue:0.82, alpha:0.6)
     
@@ -167,24 +167,24 @@ class PFMedicineTableViewController: PFQueryTableViewController, UISearchBarDele
         // Dispose of any resources that can be recreated.
     }
 
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         //dismiss keyboard
         searchBar.resignFirstResponder()
         //reload table data
         self.loadObjects()
         
     }
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         self.loadObjects()
     }
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
         //dismiss
         searchBar.resignFirstResponder()
         self.loadObjects()
     }
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         self.loadObjects()
     }
 }

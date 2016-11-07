@@ -18,13 +18,13 @@ class PFTableViewController: PFQueryTableViewController {
 
      //var pdfWebViewData = [AnyObject]()
     
-    override func queryForTable() -> PFQuery {
+    override func queryForTable() -> PFQuery<PFObject> {
     let query = PFQuery(className: "TestDataString")
         if(objects?.count == 0){
-            query.cachePolicy = PFCachePolicy.CacheThenNetwork
+            query.cachePolicy = PFCachePolicy.cacheThenNetwork
             }
     
-        query.orderByAscending("artNames")
+        query.order(byAscending: "artNames")
         return query
 
     }
@@ -46,20 +46,20 @@ class PFTableViewController: PFQueryTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Reading List"
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UIApplication.shared.statusBarStyle = .lightContent
         // Do any additional setup after loading the view.
         self.tableView.rowHeight = rowHeight + 10
         //let aquaColor = UIColor(red: 3.0, green: 81.0, blue: 255.0, alpha: 1.0)
-        self.navigationController?.navigationBar.barTintColor = UIColor.blueColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.blue
         
         
     }
-     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, object: PFObject?) -> PFTableViewCell? {
         //attempting to make a new label cell for view controller
-        var cell:PFTableViewCell? = tableView.dequeueReusableCellWithIdentifier("cell") as? PFTableViewCell!
+        var cell:PFTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell") as? PFTableViewCell!
         
         if cell == nil{
-            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+            cell = PFTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         }
             
         if let articleName = object?["artNames"] as? String{
@@ -93,10 +93,10 @@ class PFTableViewController: PFQueryTableViewController {
     // MARK: - Navigation
 
      //In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "pdfSegue"{
         // Pass the selected object to the new view controller.
-        let detailScene = segue.destinationViewController as! PFViewController
+        let detailScene = segue.destination as! PFViewController
         if let indexPath = self.tableView.indexPathForSelectedRow{
             let row = Int(indexPath.row)
             detailScene.currentObject = (objects![row] )

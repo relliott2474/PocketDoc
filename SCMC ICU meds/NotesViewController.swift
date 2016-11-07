@@ -18,33 +18,33 @@ class NotesViewController: UIViewController {
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var notesField: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
-    @IBAction func buttonAction(sender: AnyObject) {
+    @IBAction func buttonAction(_ sender: AnyObject) {
         
         if titleTextField.text == ""{
                 emptyStringAlert()
             
         } else if buttonView == "Save" {
-            buttonOutlet.backgroundColor = UIColor.greenColor()
+            buttonOutlet.backgroundColor = UIColor.green
             var name = titleTextField.text
-            if name != name?.capitalizedString{
-                name = name?.capitalizedString
+            if name != name?.capitalized{
+                name = name?.capitalized
             }
-            let text = notesField.text.capitalizedString
+            let text = notesField.text.capitalized
             let dataManager = DataManager()
             dataManager.saveNewDataToModel(name!, dataText:text)//may need to set date here.
-            buttonOutlet.setTitle("Update", forState: UIControlState.Normal)
+            buttonOutlet.setTitle("Update", for: UIControlState())
             buttonView = "Update"
             
             
         } else if buttonView == "Update"{
             buttonView = "Update"
-            buttonOutlet.setTitle("Update", forState: UIControlState.Normal)
+            buttonOutlet.setTitle("Update", for: UIControlState())
             var name = titleTextField.text
-            if name != name?.capitalizedString{
-                name = name?.capitalizedString
+            if name != name?.capitalized{
+                name = name?.capitalized
             }
             var text = notesField.text
-            text = text.capitalizedString
+            text = text?.capitalized
             let dataManager = DataManager()
             let newDate = dataManager.getCurrentShortDate()
             dataManager.updateData(noteTitle, nameText:name!, dataText:text, upD:newDate)
@@ -61,7 +61,7 @@ class NotesViewController: UIViewController {
         titleTextField.adjustsFontSizeToFitWidth = true
         notesField.layer.cornerRadius = 10.0
         notesField.text = notesDescription
-        buttonOutlet.setTitle(buttonView, forState:.Normal)
+        buttonOutlet.setTitle(buttonView, for:UIControlState())
         buttonOutlet.layer.cornerRadius = 10.0
             
     }
@@ -73,27 +73,27 @@ class NotesViewController: UIViewController {
     
     func emptyStringAlert(){
         
-            let alert = UIAlertController(title: "Error", message: "Give your note a title.", preferredStyle: .Alert)
-            let cancelAction = UIAlertAction(title: "Ok", style: .Default) { (action:UIAlertAction) -> Void in
+            let alert = UIAlertController(title: "Error", message: "Give your note a title.", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Ok", style: .default) { (action:UIAlertAction) -> Void in
             }
-            presentViewController(alert, animated: true, completion: nil)
+            present(alert, animated: true, completion: nil)
             alert.addAction(cancelAction)
             
             }
     
     func noteUpdatedAlert(){
-        let alert = UIAlertController(title: "Updated", message: "Your note was updated!", preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: "Ok.", style: .Default) { (UIAlertAction) -> Void in
+        let alert = UIAlertController(title: "Updated", message: "Your note was updated!", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Ok.", style: .default) { (UIAlertAction) -> Void in
         }
-        presentViewController(alert, animated: true, completion:nil)
+        present(alert, animated: true, completion:nil)
         alert.addAction(cancelAction)
         
     }
     
-   @IBAction func textFieldDoneEditing(sender:UITextField){
+   @IBAction func textFieldDoneEditing(_ sender:UITextField){
         sender.resignFirstResponder()
     }
-    @IBAction func DismissKeyboard(sender:AnyObject){
+    @IBAction func DismissKeyboard(_ sender:AnyObject){
         notesField.resignFirstResponder()
     }
     

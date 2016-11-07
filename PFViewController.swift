@@ -20,16 +20,16 @@ class PFViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         if let object = currentObject{
             
-            let pdfOutput:PFFile! = object.objectForKey("pdfName") as! PFFile!
+            let pdfOutput:PFFile! = object.object(forKey: "pdfName") as! PFFile!
             if let currentPDF = pdfOutput{
                 if currentPDF.url != nil{
-                    let urlFromParse = NSURL(string: currentPDF.url!)
-                    let request = NSURLRequest(URL:urlFromParse!)
+                    let urlFromParse = URL(string: currentPDF.url!)
+                    let request = URLRequest(url:urlFromParse!)
                     self.pdfWebView.loadRequest(request)
                    
                 }
                 
-                let outPut = object.objectForKey("artNames") as! NSString
+                let outPut = object.object(forKey: "artNames") as! NSString
                 //println("the appropriate response is \(outPut)")
                 let object:AnyObject = outPut
                 navigationItem.title = object as? String
@@ -39,13 +39,13 @@ class PFViewController: UIViewController, UIWebViewDelegate {
         }
     }
     
-     func webViewDidStartLoad(webView: UIWebView){
-        loadIndicator.hidden = false
+     func webViewDidStartLoad(_ webView: UIWebView){
+        loadIndicator.isHidden = false
         loadIndicator.startAnimating()
         print("Webview started Loading", terminator: "")
     }
-     func webViewDidFinishLoad(webView: UIWebView){
-        loadIndicator.hidden = true
+     func webViewDidFinishLoad(_ webView: UIWebView){
+        loadIndicator.isHidden = true
         loadIndicator.stopAnimating()
         print("Webview stopped Loading", terminator: "")
 

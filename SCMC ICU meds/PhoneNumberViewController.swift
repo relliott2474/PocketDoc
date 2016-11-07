@@ -13,9 +13,9 @@ class PhoneNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // sets the bar color
-        self.navigationController?.navigationBar.barTintColor = UIColor.magentaColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.magenta
         //set the back button text color
-        navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController!.navigationBar.tintColor = UIColor.white
 
     }
 

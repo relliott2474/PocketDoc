@@ -15,7 +15,7 @@ class ButtonViewController: UIViewController {
     @IBOutlet weak var notesButton: UIButton!
     @IBOutlet weak var PhoneNumBtn: UIButton!
     
-    let buttonColor:UIColor = UIColor.redColor()
+    let buttonColor:UIColor = UIColor.red
     let barColorTint:UIColor = UIColor(red:0.94, green:0.33, blue:0.31, alpha:1.0)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +24,10 @@ class ButtonViewController: UIViewController {
         navigationController!.navigationBar.barTintColor = buttonColor
         
         //this sets the navigation bar title text color
-        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         //this sets the back bar button color in the navigation bar.
-       navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+       navigationController!.navigationBar.tintColor = UIColor.white
         navigationController?.navigationBar
         borders()
         
@@ -63,8 +63,8 @@ class ButtonViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        navigationController!.navigationBar.barTintColor = UIColor.redColor()
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController!.navigationBar.barTintColor = UIColor.red
         borders()
     }
     
