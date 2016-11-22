@@ -11,7 +11,7 @@ import Parse
 import Bolts
 
 class PFMedicineViewController: UIViewController {
-    var currentObject1 = PFObject?()
+    var currentObject1:PFObject?
     
     let groups = ["Cardiac", "Hemostasis", "Neuro", "Pressors", "Reversal Agents", "Sedatives"]
     
@@ -22,16 +22,16 @@ class PFMedicineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let object = currentObject1{
-            let nameObject: AnyObject? = object.object(forKey: "name")
+            let nameObject: AnyObject? = object.object(forKey: "name") as AnyObject?
             nameLabel.text = nameObject as? String
             //navigationItem.title = nameObject as? String
             
             //does label
-            let doseObject:AnyObject? = object.object(forKey: "doserange")
+            let doseObject:AnyObject? = object.object(forKey: "doserange") as AnyObject?
             doseLabel.text = doseObject as? String
             
             // textview
-            let textObject:AnyObject? = object.object(forKey: "textInfo")
+            let textObject:AnyObject? = object.object(forKey: "textInfo") as AnyObject?
             textInfo.text = textObject as? String
         }
         // Do any additional setup after loading the view.

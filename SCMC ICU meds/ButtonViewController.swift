@@ -28,7 +28,7 @@ class ButtonViewController: UIViewController {
         
         //this sets the back bar button color in the navigation bar.
        navigationController!.navigationBar.tintColor = UIColor.white
-        navigationController?.navigationBar
+        //navigationController?.navigationBar
         borders()
         
        /* //set a pic to the background of the title bar.

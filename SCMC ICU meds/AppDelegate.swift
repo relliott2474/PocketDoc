@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    // MARK: - Core Data stack
+    // MARK: - Core Data stack for iOS 9
     
     lazy var applicationDocumentsDirectory: URL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "DNR.CoreDataTest" in the application's documents Application Support directory.

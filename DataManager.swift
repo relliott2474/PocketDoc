@@ -14,7 +14,7 @@ class DataManager {
     
     let appDel = UIApplication.shared.delegate as! AppDelegate
     
-    func saveNewDataToModel(_ nameText:String, dataText:String){
+    /*func saveNewDataToModel(_ nameText:String, dataText:String){
         let context: NSManagedObjectContext = appDel.managedObjectContext
         let newData = NSEntityDescription.insertNewObject(forEntityName: "NoteFile", into: context)
         // sets the new transferred data to be saved.
@@ -43,7 +43,7 @@ class DataManager {
          }
         }
     
-    
+    */
     func updateData (_ title:String, nameText:String, dataText:String, upD:String){
         
         let context:NSManagedObjectContext = appDel.managedObjectContext
@@ -88,4 +88,40 @@ class DataManager {
         let DateInFormat = dateFormatter.string(from: todaysDate)
         return DateInFormat
     }
+    
+    func saveNewDataToModel(_ nameText:String, dataText:String) {
+        let context:NSManagedObjectContext = appDel.managedObjectContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "NoteFile")
+        request.predicate = NSPredicate(format: "noteTitle = %@", nameText)
+        request.returnsObjectsAsFaults = false
+        
+        do{
+            let results = try context.fetch(request)
+            if results.count == 0{
+                let newData = NSEntityDescription.insertNewObject(forEntityName: "NoteFile", into: context)
+                newData.setValue(nameText,forKey:"noteTitle")
+                newData.setValue(dataText, forKey:"noteText")
+                do{
+                    try context.save()
+                    print("saved updated data")
+                    if let newtitle = newData.value(forKey: "noteTitle") as? String{
+                        if let newdocument = newData.value(forKey: "noteText") as? String{
+                            print("new data \(newtitle,newdocument)")
+                        }
+                    }
+                }catch {
+                    print("failed to save updated data")
+                }
+                
+            }//results.count
+            
+            
+        }//do
+        catch{
+            print("failed to update the data")
+        }
+        
+        
+    }
+    
 }
